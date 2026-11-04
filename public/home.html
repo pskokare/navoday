@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Arisetheme">
+    <!-- Page Title -->
+    <title>Pluxes - Medical & Healthcare HTML Template</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/navoday-logo.png">
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <style>
+        /* Home-only clinic navigation: deliberately scoped to avoid changing other template pages. */
+        .navoday-home-header {
+            --nh-pink: #e61079;
+            --nh-orange: #f08818;
+            --nh-ink: #293136;
+            --nh-line: #e6e8e9;
+            position: relative;
+            z-index: 200;
+            background: #fff;
+            font-family: "Rethink Sans", sans-serif;
+            box-shadow: 0 2px 12px rgba(22, 30, 34, .08)
+        }
+
+        .navoday-home-header * {
+            box-sizing: border-box
+        }
+
+        .nh-wrap {
+            width: min(100% - 48px, 1300px);
+            margin: auto
+        }
+
+        .nh-topbar {
+            background: #2d3336;
+            color: #fff;
+            font-size: 14px
+        }
+
+        .nh-topbar .nh-wrap {
+            min-height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        .nh-utility,
+        .nh-utility a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff
+        }
+
+        .nh-utility-set {
+            display: flex;
+            align-items: center;
+            gap: 28px
+        }
+
+        .nh-utility i,
+        .nh-menu-link i,
+        .nh-mobile-summary i {
+            font-style: normal
+        }
+
+        .nh-hours {
+            color: #ffd39d
+        }
+
+        .nh-whatsapp {
+            color: #fff
+        }
+
+        .nh-whatsapp i {
+            display: grid;
+            place-items: center;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #25d366;
+            font-size: 12px
+        }
+
+        .nh-navbar {
+            min-height: 104px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px
+        }
+
+        .nh-logo {
+            display: inline-flex;
+            align-items: center;
+            flex: none
+        }
+
+        .nh-logo img {
+            display: block;
+            width: auto;
+            height: 64px;
+            max-width: 280px;
+            object-fit: contain
+        }
+
+        .nh-desktop-menu {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-left: auto
+        }
+
+        .nh-menu-item {
+            display: flex;
+            align-items: stretch;
+            position: relative
+        }
+
+        .nh-menu-link {
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: var(--nh-ink);
+            font: 600 16px/1 "Rethink Sans", sans-serif;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            white-space: nowrap
+        }
+
+        .nh-menu-item.is-open>.nh-menu-link,
+        .nh-menu-link:hover,
+        .nh-menu-link:focus-visible {
+            color: var(--nh-pink);
+            outline: 0
+        }
+
+        .nh-menu-item.is-open>.nh-menu-link:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            right: 16px;
+            height: 3px;
+            background: var(--nh-orange)
+        }
+
+        .nh-menu-link i {
+            font-size: 12px;
+            transition: transform .2s
+        }
+
+        .nh-menu-item.is-open>.nh-menu-link i {
+            transform: rotate(180deg)
+        }
+
+        .nh-book {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            flex: none;
+            background: var(--nh-pink);
+            color: #fff !important;
+            border-radius: 8px;
+            padding: 16px 21px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 1;
+            transition: background .2s, transform .2s
+        }
+
+        .nh-book:hover {
+            background: #c70b67;
+            transform: translateY(-1px)
+        }
+
+        .nh-flyout {
+            display: none;
+            position: absolute;
+            top: 100%;
+            z-index: 20;
+            background: #fff;
+            border-top: 3px solid var(--nh-orange);
+            box-shadow: 0 18px 38px rgba(25, 35, 40, .17)
+        }
+
+        .nh-menu-item.is-open>.nh-flyout {
+            display: block
+        }
+
+        .nh-conditions {
+            left: 0;
+            width: 312px;
+            border-radius: 0 0 12px 12px;
+            padding: 10px 0
+        }
+
+        .nh-flyout a {
+            display: block;
+            color: var(--nh-ink);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.25;
+            text-decoration: none
+        }
+
+        .nh-conditions a {
+            padding: 12px 25px
+        }
+
+        .nh-conditions a:hover {
+            color: var(--nh-pink);
+            background: #fdebf4;
+            box-shadow: inset 3px 0 0 var(--nh-pink)
+        }
+
+        .nh-conditions .nh-all-link {
+            margin-top: 7px;
+            padding-top: 15px;
+            border-top: 1px solid var(--nh-line);
+            color: var(--nh-pink);
+            font-weight: 700;
+            background: #fff;
+            box-shadow: none
+        }
+
+        .nh-treatments {
+            position: fixed;
+            left: 50%;
+            top: calc(var(--nh-header-bottom, 146px));
+            transform: translateX(-50%);
+            width: min(100% - 48px, 1300px);
+            border-radius: 0 0 12px 12px;
+            padding: 25px 30px 19px;
+            grid-template-columns: 1.15fr 1.12fr .95fr .95fr 1fr;
+            gap: 28px
+        }
+
+        .nh-menu-item.is-open>.nh-treatments {
+            display: grid
+        }
+
+        .nh-treatment-group h3 {
+            margin: 0 0 9px;
+            padding-bottom: 11px;
+            border-bottom: 1px solid var(--nh-line);
+            color: var(--nh-pink);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: .08em;
+            line-height: 1;
+            text-transform: uppercase
+        }
+
+        .nh-treatment-group a {
+            padding: 6px 0
+        }
+
+        .nh-treatment-group a:hover {
+            color: var(--nh-pink)
+        }
+
+        .nh-treatments .nh-all-link {
+            grid-column: 1/-1;
+            border-top: 1px solid var(--nh-line);
+            padding-top: 15px;
+            margin-top: 4px;
+            color: var(--nh-pink);
+            font-weight: 800
+        }
+
+        .nh-mobile-toggle,
+        .nh-mobile-panel {
+            display: none
+        }
+
+        @media (max-width:1160px) {
+            .nh-desktop-menu {
+                gap: 0
+            }
+
+            .nh-menu-link {
+                padding: 0 10px
+            }
+
+            .nh-menu-item.is-open>.nh-menu-link:after {
+                left: 10px;
+                right: 10px
+            }
+
+            .nh-book {
+                padding: 15px
+            }
+
+            .nh-treatments {
+                width: calc(100% - 30px)
+            }
+        }
+
+        @media (max-width:991px) {
+            .nh-wrap {
+                width: min(100% - 32px, 760px)
+            }
+
+            .nh-topbar {
+                display: none
+            }
+
+            .nh-navbar {
+                min-height: 76px
+            }
+
+            .nh-logo img {
+                height: 48px;
+                max-width: 220px
+            }
+
+            .nh-desktop-menu,
+            .nh-navbar>.nh-book {
+                display: none
+            }
+
+            .nh-mobile-toggle {
+                display: inline-grid;
+                place-items: center;
+                width: 43px;
+                height: 43px;
+                border: 1px solid var(--nh-line);
+                border-radius: 9px;
+                background: #fff;
+                color: var(--nh-ink);
+                font-size: 22px;
+                cursor: pointer
+            }
+
+            .nh-mobile-toggle[aria-expanded="true"] {
+                color: var(--nh-pink);
+                border-color: var(--nh-pink)
+            }
+
+            .nh-mobile-panel {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #fff;
+                border-top: 1px solid var(--nh-line);
+                box-shadow: 0 14px 28px rgba(25, 35, 40, .13);
+                max-height: calc(100vh - 76px);
+                overflow: auto
+            }
+
+            .nh-mobile-panel.is-open {
+                display: block
+            }
+
+            .nh-mobile-panel-inner {
+                width: min(100% - 32px, 760px);
+                margin: auto;
+                padding: 8px 0 22px
+            }
+
+            .nh-mobile-link,
+            .nh-mobile-summary {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 3px;
+                border: 0;
+                border-bottom: 1px solid #edf0f1;
+                background: #fff;
+                color: var(--nh-ink);
+                font: 600 17px/1.2 "Rethink Sans", sans-serif;
+                text-align: left;
+                text-decoration: none
+            }
+
+            .nh-mobile-summary {
+                cursor: pointer
+            }
+
+            .nh-mobile-summary i {
+                font-size: 12px;
+                transition: transform .2s
+            }
+
+            .nh-mobile-details[open] .nh-mobile-summary {
+                color: var(--nh-pink)
+            }
+
+            .nh-mobile-details[open] .nh-mobile-summary i {
+                transform: rotate(180deg)
+            }
+
+            .nh-mobile-submenu {
+                padding: 6px 0 8px;
+                background: #fafafa
+            }
+
+            .nh-mobile-submenu a {
+                display: block;
+                padding: 9px 17px;
+                color: #526066;
+                font-size: 15px;
+                font-weight: 500;
+                text-decoration: none
+            }
+
+            .nh-mobile-submenu a:hover {
+                color: var(--nh-pink)
+            }
+
+            .nh-mobile-book {
+                justify-content: center;
+                gap: 8px;
+                margin-top: 19px;
+                border: 0;
+                border-radius: 9px;
+                background: var(--nh-pink);
+                color: #fff;
+                padding: 15px;
+                font-weight: 800
+            }
+
+            .nh-mobile-contact {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                padding: 16px 0 0;
+                color: #526066;
+                font-size: 14px
+            }
+
+            .nh-mobile-contact a {
+                color: inherit;
+                text-decoration: none
+            }
+
+            .nh-mobile-contact .nh-mobile-wa {
+                color: #168648;
+                font-weight: 700
+            }
+        }
+
+        @media (max-width:480px) {
+
+            .nh-wrap,
+            .nh-mobile-panel-inner {
+                width: calc(100% - 24px)
+            }
+
+            .nh-logo img {
+                height: 43px;
+                max-width: 190px
+            }
+
+            .nh-navbar {
+                min-height: 70px
+            }
+
+            .nh-mobile-panel {
+                max-height: calc(100vh - 70px)
+            }
+
+            .nh-mobile-link,
+            .nh-mobile-summary {
+                padding-top: 13px;
+                padding-bottom: 13px
+            }
+
+            .nh-mobile-contact {
+                flex-wrap: wrap;
+                gap: 8px 15px
+            }
+        }
+
+        .nh-mobile-treatment-list strong {
+            display: block;
+            padding: 12px 17px 4px;
+            color: var(--nh-pink);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase
+        }
+
+        /* Retain the site's original accent dropdown treatment, rather than a white panel. */
+        .nh-flyout {
+            background: var(--nh-pink)
+        }
+
+        .nh-flyout a,
+        .nh-conditions .nh-all-link,
+        .nh-treatments .nh-all-link {
+            color: #fff
+        }
+
+        .nh-conditions {
+            top: calc(100% + 8px)
+        }
+
+        .nh-conditions a:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, .14);
+            box-shadow: inset 3px 0 0 var(--nh-orange)
+        }
+
+        .nh-conditions .nh-all-link,
+        .nh-treatments .nh-all-link {
+            border-color: rgba(255, 255, 255, .28);
+            background: transparent
+        }
+
+        .nh-treatment-group h3 {
+            color: #fff;
+            border-color: rgba(255, 255, 255, .28)
+        }
+
+        .nh-treatment-group a:hover {
+            color: #fff;
+            text-decoration: underline
+        }
+
+        .nh-mobile-treatment-list strong {
+            color: var(--nh-pink)
+        }
+
+        /* Wordmark composition for the supplied clinic-header design. */
+        .nh-logo {
+            gap: 9px;
+            text-decoration: none
+        }
+
+        .nh-logo img {
+            width: 58px;
+            height: 58px;
+            max-width: none;
+            object-fit: contain
+        }
+
+        .nh-logo-copy {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            line-height: 1
+        }
+
+        .nh-logo-copy strong {
+            color: #ed8218;
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: -.06em;
+            white-space: nowrap
+        }
+
+        .nh-logo-copy small {
+            margin-top: 3px;
+            color: #667075;
+            font-size: 10px;
+            font-weight: 600
+        }
+
+        @media (max-width:991px) {
+            .nh-logo img {
+                width: 47px;
+                height: 47px;
+                max-width: none
+            }
+
+            .nh-logo-copy strong {
+                font-size: 23px
+            }
+        }
+
+        @media (max-width:480px) {
+            .nh-logo {
+                gap: 6px
+            }
+
+            .nh-logo img {
+                width: 40px;
+                height: 40px;
+                max-width: none
+            }
+
+            .nh-logo-copy strong {
+                font-size: 20px
+            }
+
+            .nh-logo-copy small {
+                font-size: 9px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/navoday-logo.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Home-only clinic header start -->
+    <header class="navoday-home-header" data-navoday-header>
+        <div class="nh-topbar">
+            <div class="nh-wrap">
+                <div class="nh-utility-set"><span class="nh-utility"><i aria-hidden="true">⌖</i>Kharadi,
+                        Pune</span><span class="nh-utility nh-hours"><i aria-hidden="true">◷</i>Days and timings</span>
+                </div>
+                <div class="nh-utility-set"><a class="nh-utility" href="tel:+917720868686"><i
+                            aria-hidden="true">☎</i>+91 7720 868 686</a><a class="nh-utility nh-whatsapp"
+                        href="https://wa.me/917720868686" target="_blank" rel="noopener"><i
+                            aria-hidden="true">◔</i>WhatsApp</a></div>
+            </div>
+        </div>
+        <div class="nh-wrap nh-navbar">
+            <a class="nh-logo" href="./" aria-label="Navoday Clinic home"><img src="images/navoday-logo.png"
+                    alt=""><span class="nh-logo-copy"><strong>Navoday Clinic</strong><small>be
+                        healthy</small></span></a>
+            <nav class="nh-desktop-menu" aria-label="Primary navigation">
+                <a class="nh-menu-link" href="./">Home</a><a class="nh-menu-link" href="about.html">About</a>
+                <div class="nh-menu-item" data-menu="conditions"><button class="nh-menu-link" type="button"
+                        aria-expanded="false" aria-controls="nh-conditions">Conditions <i
+                            aria-hidden="true">⌄</i></button>
+                    <div class="nh-flyout nh-conditions" id="nh-conditions"><a href="services.html">Piles
+                            (Haemorrhoids)</a><a href="services.html">Anal Fissure</a><a href="services.html">Anal
+                            Fistula</a><a href="services.html">Pilonidal Sinus</a><a href="services.html">Anal
+                            Stricture</a><a class="nh-all-link" href="services.html">View all conditions →</a></div>
+                </div>
+                <div class="nh-menu-item" data-menu="treatments"><button class="nh-menu-link" type="button"
+                        aria-expanded="false" aria-controls="nh-treatments">Treatments <i
+                            aria-hidden="true">⌄</i></button>
+                    <div class="nh-flyout nh-treatments" id="nh-treatments">
+                        <div class="nh-treatment-group">
+                            <h3>Piles</h3><a href="services.html">Injection Sclerotherapy</a><a
+                                href="services.html">HAL-RAR Treatment</a><a href="services.html">THD (Transanal
+                                Dearterialisation)</a><a href="services.html">Laser Haemorrhoidoplasty</a><a
+                                href="services.html">MPH (Stapler)</a><a href="services.html">Infrared Coagulation</a><a
+                                href="services.html">Cryosurgery</a>
+                        </div>
+                        <div class="nh-treatment-group">
+                            <h3>Fistula</h3><a href="services.html">Laser Fistula Treatment (LFT)</a><a
+                                href="services.html">FiLaC Laser Closure</a><a href="services.html">VAAFT</a><a
+                                href="services.html">Internal Fistulectomy</a><a href="services.html">FiLaC with
+                                Flap</a><a href="services.html">Enterovaginal Fistulectomy</a>
+                        </div>
+                        <div class="nh-treatment-group">
+                            <h3>Fissure</h3><a href="services.html">CLIS Treatment</a><a href="services.html">Botox
+                                Treatment</a><a href="services.html">Laser Internal Sphincterotomy</a>
+                        </div>
+                        <div class="nh-treatment-group">
+                            <h3>Pilonidal Sinus</h3><a href="services.html">Multiple Z-Plasty</a><a
+                                href="services.html">Limberg Flap</a><a href="services.html">Karydakis Procedure</a><a
+                                href="services.html">Bascom's Cleft Lift</a>
+                        </div>
+                        <div class="nh-treatment-group">
+                            <h3>Other Procedures</h3><a href="services.html">STARR Procedure</a><a
+                                href="services.html">Whitehead Technique</a><a href="services.html">Suture
+                                Mucoplasty</a><a href="services.html">Radiofrequency</a><a href="services.html">Video
+                                Proctoscopy</a>
+                        </div><a class="nh-all-link" href="services.html">View all treatments →</a>
+                    </div>
+                </div>
+                <a class="nh-menu-link" href="blog.html">Health Blog</a><a class="nh-menu-link"
+                    href="contact.html">Contact</a>
+            </nav>
+            <a class="nh-book" href="book-appointment.html"><span aria-hidden="true">▣</span>Book Appointment</a>
+            <button class="nh-mobile-toggle" type="button" aria-expanded="false" aria-controls="nh-mobile-panel"
+                aria-label="Open navigation"><span aria-hidden="true">☰</span></button>
+        </div>
+        <div class="nh-mobile-panel" id="nh-mobile-panel">
+            <div class="nh-mobile-panel-inner"><a class="nh-mobile-link" href="./">Home</a><a class="nh-mobile-link"
+                    href="about.html">About</a>
+                <details class="nh-mobile-details">
+                    <summary class="nh-mobile-summary">Conditions <i aria-hidden="true">⌄</i></summary>
+                    <div class="nh-mobile-submenu"><a href="services.html">Piles (Haemorrhoids)</a><a
+                            href="services.html">Anal Fissure</a><a href="services.html">Anal Fistula</a><a
+                            href="services.html">Pilonidal Sinus</a><a href="services.html">Anal Stricture</a><a
+                            href="services.html">View all conditions →</a></div>
+                </details>
+                <details class="nh-mobile-details">
+                    <summary class="nh-mobile-summary">Treatments <i aria-hidden="true">⌄</i></summary>
+                    <div class="nh-mobile-submenu nh-mobile-treatment-list"><strong>Piles</strong><a
+                            href="services.html">Injection Sclerotherapy</a><a href="services.html">HAL-RAR
+                            Treatment</a><a href="services.html">THD (Transanal Dearterialisation)</a><a
+                            href="services.html">Laser Haemorrhoidoplasty</a><a href="services.html">MPH (Stapler)</a><a
+                            href="services.html">Infrared Coagulation</a><a
+                            href="services.html">Cryosurgery</a><strong>Fistula</strong><a href="services.html">Laser
+                            Fistula Treatment (LFT)</a><a href="services.html">FiLaC Laser Closure</a><a
+                            href="services.html">VAAFT</a><a href="services.html">Internal Fistulectomy</a><a
+                            href="services.html">FiLaC with Flap</a><a href="services.html">Enterovaginal
+                            Fistulectomy</a><strong>Fissure</strong><a href="services.html">CLIS Treatment</a><a
+                            href="services.html">Botox Treatment</a><a href="services.html">Laser Internal
+                            Sphincterotomy</a><strong>Pilonidal Sinus</strong><a href="services.html">Multiple
+                            Z-Plasty</a><a href="services.html">Limberg Flap</a><a href="services.html">Karydakis
+                            Procedure</a><a href="services.html">Bascom's Cleft Lift</a><strong>Other
+                            Procedures</strong><a href="services.html">STARR Procedure</a><a
+                            href="services.html">Whitehead Technique</a><a href="services.html">Suture Mucoplasty</a><a
+                            href="services.html">Radiofrequency</a><a href="services.html">Video Proctoscopy</a><a
+                            href="services.html">View all treatments →</a></div>
+                </details><a class="nh-mobile-link" href="blog.html">Health Blog</a><a class="nh-mobile-link"
+                    href="contact.html">Contact</a><a class="nh-mobile-link nh-mobile-book"
+                    href="book-appointment.html">▣&nbsp; Book Appointment</a>
+                <div class="nh-mobile-contact"><a href="tel:+917720868686">☎ Call</a><a class="nh-mobile-wa"
+                        href="https://wa.me/917720868686" target="_blank" rel="noopener">◔ WhatsApp</a></div>
+            </div>
+        </div>
+    </header>
+    <!-- Home-only clinic header end -->
+
+    <!-- Hero Section Start -->
+    <div class="hero dark-section parallaxie">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7">
+                    <!-- Hero Content Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Better Care For Better Life.</span>
+                            <h1 class="text-anime-style-3" data-cursor="-opaque">Advanced healthcare solutions for
+                                healthier lives today</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">We provide advanced healthcare solutions
+                                designed to improve the well-being of every patient. With experienced medical
+                                professionals, modern technology.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Hero Button Start -->
+                            <div class="hero-btn">
+                                <a href="contact.html" class="btn-default btn-highlighted">Start Consultation</a>
+                            </div>
+                            <!-- Hero Button End -->
+
+                            <!-- Hero Client Box Start -->
+                            <div class="hero-client-box">
+                                <!-- Satisfy Client Image Start -->
+                                <div class="satisfy-client-images">
+                                    <div class="satisfy-client-image">
+                                        <figure class="image-anime">
+                                            <img src="images/author-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="satisfy-client-image">
+                                        <figure class="image-anime">
+                                            <img src="images/author-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="satisfy-client-image">
+                                        <figure class="image-anime">
+                                            <img src="images/author-3.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <!-- Satisfy Client Image End -->
+
+                                <!-- Hero Client Content Start -->
+                                <div class="hero-client-content">
+                                    <h2><span class="counter">4.9</span>/5<i class="fa fa-solid fa-star"></i></h2>
+                                    <p>More Than 2500 Reviews</p>
+                                </div>
+                                <!-- Hero Client Content End -->
+                            </div>
+                            <!-- Hero Client Box End -->
+                        </div>
+                        <!-- Hero Content Body End -->
+                    </div>
+                    <!-- Hero Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- About Us Section Start -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <!-- About Us Image Box Start -->
+                    <div class="about-us-image-box wow fadeInUp">
+                        <!-- About Image Title Start -->
+                        <div class="about-image-title">
+                            <h2>Healthcare</h2>
+                        </div>
+                        <!-- About Image Title End -->
+
+                        <!-- About Image Box 1 Start -->
+                        <div class="about-image-box-1">
+                            <!-- About Us Image Start -->
+                            <div class="about-us-image">
+                                <figure>
+                                    <img src="images/about-us-image.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- About Us Image End -->
+
+                            <!-- About Review Box Start -->
+                            <div class="about-review-box hero-client-box">
+                                <!-- Satisfy Client Image Start -->
+                                <div class="satisfy-client-images">
+                                    <div class="satisfy-client-image">
+                                        <figure class="image-anime">
+                                            <img src="images/author-1.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="satisfy-client-image">
+                                        <figure class="image-anime">
+                                            <img src="images/author-2.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="satisfy-client-image">
+                                        <figure class="image-anime">
+                                            <img src="images/author-3.jpg" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <!-- Satisfy Client Image End -->
+
+                                <!-- Hero Client Content Start -->
+                                <div class="hero-client-content">
+                                    <h2><span class="counter">4.9</span>/5<i class="fa fa-solid fa-star"></i></h2>
+                                    <p>More Than 2500 Reviews</p>
+                                </div>
+                                <!-- Hero Client Content End -->
+                            </div>
+                            <!-- About Review Box End -->
+                        </div>
+                        <!-- About Image Box 1 End -->
+                    </div>
+                    <!-- About Us Image Box End -->
+                </div>
+
+                <div class="col-xl-6">
+                    <!-- About Us Content Start -->
+                    <div class="about-us-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">About Us</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">About our journey providing quality
+                                healthcare</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">We are dedicated to providing compassionate,
+                                high-quality healthcare that focuses on your overall well-being. Our experienced medical
+                                professionals technology with personalized care to ensure every patient receives.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- About Us Item List Start -->
+                        <div class="about-us-item-list wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- About Us Item Start -->
+                            <div class="about-us-item">
+                                <h3>Patient Focused Care</h3>
+                                <p>We prioritize every personalized care, clear communication.</p>
+                            </div>
+                            <!-- About Us Item End -->
+
+                            <!-- About Us Item Start -->
+                            <div class="about-us-item">
+                                <h3>Quality Medical Treatment</h3>
+                                <p>We prioritize every personalized care, clear communication.</p>
+                            </div>
+                            <!-- About Us Item End -->
+                        </div>
+                        <!-- About Us Item List End -->
+
+                        <!-- About Content Footer Start -->
+                        <div class="about-content-footer wow fadeInUp" data-wow-delay="0.6s">
+                            <!-- About Us Button Start -->
+                            <div class="about-us-btn">
+                                <a href="about.html" class="btn-default">Learn More About</a>
+                            </div>
+                            <!-- About Us Button End -->
+
+                            <!-- About Us Author Box Start -->
+                            <div class="about-us-author-box">
+                                <!-- About Author Image Start -->
+                                <div class="about-us-author-image">
+                                    <figure class="image-anime">
+                                        <img src="images/author-1.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <!-- About Author Image End -->
+
+                                <!-- About Author Content Start -->
+                                <div class="about-us-author-content">
+                                    <h3>Devon Lane</h3>
+                                    <p>Internal Medicine Specialist</p>
+                                </div>
+                                <!-- About Author Content End -->
+                            </div>
+                            <!-- About Us Author Box End -->
+                        </div>
+                        <!-- About Content Footer End -->
+                    </div>
+                    <!-- About Us Content End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+    <!-- Our Service Section Start -->
+    <div class="our-service bg-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Our Services</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Expert healthcare services for better
+                            living</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp">
+                        <div class="icon-box">
+                            <img src="images/icon-service-item-1.svg" alt="">
+                        </div>
+                        <div class="service-item-body">
+                            <div class="service-item-content">
+                                <h2><a href="service-single.html">Pediatric Care</a></h2>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                            <div class="service-item-btn">
+                                <a href="service-single.html" class="readmore-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <img src="images/icon-service-item-2.svg" alt="">
+                        </div>
+                        <div class="service-item-body">
+                            <div class="service-item-content">
+                                <h2><a href="service-single.html">Family Medicine</a></h2>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                            <div class="service-item-btn">
+                                <a href="service-single.html" class="readmore-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <img src="images/icon-service-item-3.svg" alt="">
+                        </div>
+                        <div class="service-item-body">
+                            <div class="service-item-content">
+                                <h2><a href="service-single.html">Preventive Healthcare</a></h2>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                            <div class="service-item-btn">
+                                <a href="service-single.html" class="readmore-btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <!-- Service Cta Box Start -->
+                    <div class="service-item service-cta-box wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Service Cta Box Title Start -->
+                        <div class="service-cta-box-title">
+                            <h3>Your Health Starts With One Call</h3>
+                        </div>
+                        <!-- Service Cta Box Title End -->
+
+                        <!-- Service Cta Box Image Start -->
+                        <div class="service-cta-box-image">
+                            <figure>
+                                <img src="images/our-service-box-image.png" alt="">
+                            </figure>
+                        </div>
+                        <!-- Service Cta Box  Image End -->
+                    </div>
+                    <!-- Service Cta Box End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.4s">
+                        <p>Browse all professional healthcare services available for you and family</p>
+                        <ul>
+                            <li class="section-footer-content">Trusted By <b>58,900+</b> Users</li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li><span class="counter">4.9</span>/5</li>
+                        </ul>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Service Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6">
+                    <!-- Why Choose Us Content Start -->
+                    <div class="why-choose-us-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Why Choose Us</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Why choose us for quality healthcare
+                                services</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our experienced medical team focuses on
+                                accurate diagnosis, effective treatment, and personalized care to ensure the best
+                                outcomes for every patient.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Why Choose Us Body Start -->
+                        <div class="why-choose-us-body">
+                            <!-- Why Choose Counter Box Start -->
+                            <div class="why-choose-counter-box wow fadeInUp" data-wow-delay="0.4s">
+                                <!-- Why choose Counter Item List Start -->
+                                <div class="why-choose-counter-item-list">
+                                    <!-- Why choose Counter Item Start -->
+                                    <div class="why-choose-counter-item">
+                                        <h2><span class="counter">25</span>+</h2>
+                                        <p>Years Experience</p>
+                                    </div>
+                                    <!-- Why choose Counter Item End -->
+
+                                    <!-- Why choose Counter Item Start -->
+                                    <div class="why-choose-counter-item">
+                                        <h2><span class="counter">24</span>/7</h2>
+                                        <p>Emergency Support</p>
+                                    </div>
+                                    <!-- Why choose Counter Item End -->
+                                </div>
+                                <!-- Why Choose Counter Item List End -->
+
+                                <!-- Why Choose Counter Image Start -->
+                                <div class="why-choose-counter-image">
+                                    <figure class="image-anime">
+                                        <img src="images/why-choose-counter-image.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <!-- Why Choose Counter Image End -->
+                            </div>
+                            <!-- Why Choose Counter Box End -->
+
+                            <!-- Why Choose Body Image Start -->
+                            <div class="why-choose-body-image">
+                                <figure class="image-anime reveal">
+                                    <img src="images/why-choose-body-image.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- Why Choose Body Image End -->
+                        </div>
+                        <!-- Why Choose Us Body End -->
+                    </div>
+                    <!-- Why Choose Us Content End -->
+                </div>
+
+                <div class="col-xl-6">
+                    <!-- Why choose Us Image Box Start -->
+                    <div class="why-choose-us-image-box wow fadeInUp">
+                        <!-- Why Choose Experience Circle Start -->
+                        <div class="years-experience-circle">
+                            <figure>
+                                <img src="images/years-experience-circle-white.svg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Why Choose Experience Circle End -->
+
+                        <!-- Why Choose Us Image Start -->
+                        <div class="why-choose-us-image">
+                            <figure>
+                                <img src="images/why-choose-us-image.png" alt="">
+                            </figure>
+                        </div>
+                        <!-- Why Choose Us Image End -->
+
+                        <!-- Why Choose Cta Box Start -->
+                        <div class="why-choose-cta-box">
+                            <div class="icon-box">
+                                <img src="images/icon-why-choose-cta-box.svg" alt="">
+                            </div>
+                            <div class="why-choose-cta-content">
+                                <h2><span class="counter">12</span>+</h2>
+                                <p>Medical Departments</p>
+                            </div>
+                        </div>
+                        <!-- Why Choose Counter Box End -->
+                    </div>
+                    <!-- Why choose Us Image Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section End -->
+
+    <!-- Core Features Section Start -->
+    <div class="core-features bg-section dark-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <!-- Core Features Content Start -->
+                    <div class="core-features-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Core Feature</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Core features of our healthcare
+                                services</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our medical services are designed to provide
+                                reliable, high-quality care with a strong focus on patient comfort and safety</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Core Features Content Button Start -->
+                        <div class="core-features-content-btn wow fadeInUp" data-wow-delay="0.4s">
+                            <a href="contact.html" class="btn-default btn-highlighted">Contact Us</a>
+                        </div>
+                        <!-- Core Features Content Button End -->
+                    </div>
+                    <!-- Core Features Content End -->
+                </div>
+
+                <div class="col-xl-7">
+                    <!-- Core Features Item List Start -->
+                    <div class="core-features-item-list">
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-1.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Quality Medical Treatment</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-2.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Personalized Patient Care</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-3.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Modern Medical Facilities</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-4.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>24/7 Emergency Support</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-5.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Fast and Accurate Test Results</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="1s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-6.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Safe and Comfortable Environment</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="1.2s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-7.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Experienced Medical Professionals</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+
+                        <!-- Core Features Item Start -->
+                        <div class="core-features-item wow fadeInUp" data-wow-delay="1.4s">
+                            <div class="icon-box">
+                                <img src="images/icon-core-features-item-8.svg" alt="">
+                            </div>
+                            <div class="core-features-item-content">
+                                <h3>Advanced Diagnostic Technology</h3>
+                            </div>
+                        </div>
+                        <!-- Core Features Item End -->
+                    </div>
+                    <!-- Core Features Item List End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Core Features Section End -->
+
+    <!-- Case Study Section Start -->
+    <div class="our-case-study">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Case Study's</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Real patient success stories </h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Discover inspiring stories from patients who
+                            trusted our medical expertise and experienced successful recoveries these real-life cases
+                            highlight our commitment.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <!-- Case Study Item Start -->
+                    <div class="case-study-item wow fadeInUp">
+                        <div class="case-study-item-image">
+                            <a href="case-study-single.html" data-cursor-text="View">
+                                <figure>
+                                    <img src="images/case-study-image-1.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="case-study-item-content">
+                            <h2><a href="case-study-single.html">Heart Health Recovery</a></h2>
+                            <p>A patient experiencing severe as diagnosed with a cardiac condition.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Case Study Item Start -->
+                    <div class="case-study-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="case-study-item-image">
+                            <a href="case-study-single.html" data-cursor-text="View">
+                                <figure>
+                                    <img src="images/case-study-image-2.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="case-study-item-content">
+                            <h2><a href="case-study-single.html">Pediatric Care Improvement</a></h2>
+                            <p>A patient experiencing severe as diagnosed with a cardiac condition.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Case Study Item Start -->
+                    <div class="case-study-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="case-study-item-image">
+                            <a href="case-study-single.html" data-cursor-text="View">
+                                <figure>
+                                    <img src="images/case-study-image-3.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="case-study-item-content">
+                            <h2><a href="case-study-single.html">Dermatology Skin Treatment</a></h2>
+                            <p>A patient experiencing severe as diagnosed with a cardiac condition.</p>
+                        </div>
+                    </div>
+                    <!-- Case Study Item End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Satisfy Client Images Start -->
+                        <div class="satisfy-client-images">
+                            <div class="satisfy-client-image">
+                                <figure class="image-anime">
+                                    <img src="images/author-1.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="satisfy-client-image add-more">
+                                <img src="images/icon-phone-white.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Satisfy Client Images End -->
+                        <p>Helping You Move from Concern to Confidence with Expert Medical Care. - <a
+                                href="case-study.html">View all Case study</a></p>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case Study Section End -->
+
+    <!-- Our Fact Section Start -->
+    <div class="our-facts bg-section dark-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Fact / Statistics</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Key statistics that reflect our medical
+                            excellence</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <!-- Fact Item Start -->
+                    <div class="fact-item wow fadeInUp">
+                        <div class="fact-item-header">
+                            <div class="fact-item-counter-content">
+                                <h2><span class="counter">35</span>+</h2>
+                                <ul>
+                                    <li>Experienced Doctors</li>
+                                </ul>
+                            </div>
+                            <div class="icon-box">
+                                <img src="images/icon-fact-item-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fact-item-content">
+                            <p>Our team of experienced doctor dedicated to providing expert medical care with.</p>
+                        </div>
+                    </div>
+                    <!-- Fact Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Fact Item Start -->
+                    <div class="fact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="fact-item-header">
+                            <div class="fact-item-counter-content">
+                                <h2><span class="counter">12</span>+</h2>
+                                <ul>
+                                    <li>Medical Departments</li>
+                                </ul>
+                            </div>
+                            <div class="icon-box">
+                                <img src="images/icon-fact-item-2.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fact-item-content">
+                            <p>Our team of experienced doctor dedicated to providing expert medical care with.</p>
+                        </div>
+                    </div>
+                    <!-- Fact Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Fact Item Start -->
+                    <div class="fact-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="fact-item-header">
+                            <div class="fact-item-counter-content">
+                                <h2><span class="counter">24</span>/7</h2>
+                                <ul>
+                                    <li>Emergency Support</li>
+                                </ul>
+                            </div>
+                            <div class="icon-box">
+                                <img src="images/icon-fact-item-3.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="fact-item-content">
+                            <p>Our team of experienced doctor dedicated to providing expert medical care with.</p>
+                        </div>
+                    </div>
+                    <!-- Fact Item End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.4s">
+                        <p>Browse all professional healthcare services available for you and family</p>
+                        <ul>
+                            <li class="section-footer-content">Trusted By <b>58,900+</b> Users</li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li><span class="counter">4.9</span>/5</li>
+                        </ul>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Fact Section End -->
+
+    <!-- Our Partners Section Start -->
+    <div class="our-partners light-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-xl-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Trusted Partners</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Trusted by leading healthcare organizations
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Our Partners List Start -->
+                    <div class="our-partners-list">
+                        <ul>
+                            <li><img src="images/partners-logo-1.svg" alt=""></li>
+                            <li><img src="images/partners-logo-2.svg" alt=""></li>
+                            <li><img src="images/partners-logo-3.svg" alt=""></li>
+                            <li><img src="images/partners-logo-4.svg" alt=""></li>
+                            <li><img src="images/partners-logo-5.svg" alt=""></li>
+                            <li><img src="images/partners-logo-6.svg" alt=""></li>
+                            <li><img src="images/partners-logo-7.svg" alt=""></li>
+                            <li><img src="images/partners-logo-8.svg" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- Our Partners List End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.4s">
+                        <p>Browse all professional healthcare services available for you and family</p>
+                        <ul>
+                            <li class="section-footer-content">Trusted By <b>58,900+</b> Users</li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li><span class="counter">4.9</span>/5</li>
+                        </ul>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Partners Section End -->
+
+    <!-- How It Work Section Start -->
+    <div class="how-it-work bg-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">How It Work</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Simple steps to get started</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Getting started with us is quick and hassle-free.
+                            We follow a streamlined process designed to make your journey smooth from the very
+                            beginning.</p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- How Work Items List Start -->
+                    <div class="how-work-items-list">
+                        <!-- How Work Item Start -->
+                        <div class="how-work-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-how-work-item-1.svg" alt="">
+                            </div>
+                            <div class="how-work-item-content">
+                                <span>Step - 01</span>
+                                <h3>Strategy & Planning</h3>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Item End -->
+
+                        <!-- How Work Item Start -->
+                        <div class="how-work-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="images/icon-how-work-item-2.svg" alt="">
+                            </div>
+                            <div class="how-work-item-content">
+                                <span>Step - 02</span>
+                                <h3>Design & Development</h3>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Item End -->
+
+                        <!-- How Work Item Start -->
+                        <div class="how-work-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="images/icon-how-work-item-3.svg" alt="">
+                            </div>
+                            <div class="how-work-item-content">
+                                <span>Step - 03</span>
+                                <h3>Review & Launch</h3>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Item End -->
+
+                        <!-- How Work Item Start -->
+                        <div class="how-work-item wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="icon-box">
+                                <img src="images/icon-how-work-item-4.svg" alt="">
+                            </div>
+                            <div class="how-work-item-content">
+                                <span>Step - 04</span>
+                                <h3>Support & Growth</h3>
+                                <p>Our pediatric care focus on the health and well-being of infants, children.</p>
+                            </div>
+                        </div>
+                        <!-- How Work Item End -->
+                    </div>
+                    <!-- How Work Items List End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Satisfy Client Images Start -->
+                        <div class="satisfy-client-images">
+                            <div class="satisfy-client-image">
+                                <figure class="image-anime">
+                                    <img src="images/author-1.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="satisfy-client-image add-more">
+                                <img src="images/icon-phone-white.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Satisfy Client Images End -->
+                        <p>Helping You Move from Concern to Confidence with Expert Medical Care. -<a
+                                href="contact.html">Contact Us Today!</a></p>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How It Work Section End -->
+
+    <!-- Our Team Section Start -->
+    <div class="our-team">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Our Team</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Our skilled medical team serving patients
+                            with care</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <!-- Team Item Start -->
+                    <div class="team-item wow fadeInUp">
+                        <!-- Team Item Iamage Start -->
+                        <div class="team-item-image">
+                            <a href="team-single.html" data-cursor-text="View">
+                                <figure>
+                                    <img src="images/team-1.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Team Item Iamage End -->
+
+                        <!-- Team Item Body Start -->
+                        <div class="team-item-body">
+                            <!-- Team Social List Box Start -->
+                            <div class="team-social-list-box">
+                                <div class="team-social-btn">
+                                    <a href="team-single.html"><img src="images/icon-share.svg" alt=""></a>
+                                </div>
+                                <div class="team-social-list">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Team Social List Box End -->
+
+                            <!-- Team Item Content Start -->
+                            <div class="team-item-content">
+                                <h2><a href="team-single.html">Dr. David Wilson</a></h2>
+                                <p>Cardiologist</p>
+                            </div>
+                            <!-- Team Item Content End -->
+                        </div>
+                        <!-- Team Item Body End -->
+                    </div>
+                    <!-- Team Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Team Item Start -->
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Team Item Iamage Start -->
+                        <div class="team-item-image">
+                            <a href="team-single.html" data-cursor-text="View">
+                                <figure>
+                                    <img src="images/team-2.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Team Item Iamage End -->
+
+                        <!-- Team Item Body Start -->
+                        <div class="team-item-body">
+                            <!-- Team Social List Box Start -->
+                            <div class="team-social-list-box">
+                                <div class="team-social-btn">
+                                    <a href="team-single.html"><img src="images/icon-share.svg" alt=""></a>
+                                </div>
+                                <div class="team-social-list">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Team Social List Box End -->
+
+                            <!-- Team Item Content Start -->
+                            <div class="team-item-content">
+                                <h2><a href="team-single.html">Dr. Emma Roberts</a></h2>
+                                <p>Pediatric Specialist</p>
+                            </div>
+                            <!-- Team Item Content End -->
+                        </div>
+                        <!-- Team Item Body End -->
+                    </div>
+                    <!-- Team Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Team Item Start -->
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Team Item Iamage Start -->
+                        <div class="team-item-image">
+                            <a href="team-single.html" data-cursor-text="View">
+                                <figure>
+                                    <img src="images/team-3.jpg" alt="">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- Team Item Iamage End -->
+
+                        <!-- Team Item Body Start -->
+                        <div class="team-item-body">
+                            <!-- Team Social List Box Start -->
+                            <div class="team-social-list-box">
+                                <div class="team-social-btn">
+                                    <a href="team-single.html"><img src="images/icon-share.svg" alt=""></a>
+                                </div>
+                                <div class="team-social-list">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Team Social List Box End -->
+
+                            <!-- Team Item Content Start -->
+                            <div class="team-item-content">
+                                <h2><a href="team-single.html">Dr. Michael Johnson</a></h2>
+                                <p>Orthopedic Surgeon</p>
+                            </div>
+                            <!-- Team Item Content End -->
+                        </div>
+                        <!-- Team Item Body End -->
+                    </div>
+                    <!-- Team Item End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text section-satisfy-img wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Satisfy Client Images Start -->
+                        <div class="satisfy-client-images">
+                            <div class="satisfy-client-image">
+                                <figure class="image-anime">
+                                    <img src="images/author-1.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="satisfy-client-image add-more">
+                                <img src="images/icon-phone-white.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- Satisfy Client Images End -->
+                        <p>Helping You Move from Concern to Confidence with Expert Medical Care. - <a
+                                href="contact.html"> Contact Us Today!</a></p>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Team Section End -->
+
+    <!-- Our Pricing Section Start -->
+    <div class="our-pricing bg-section">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Pricing Plan</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Affordable healthcare plans for every need
+                        </h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing-item wow fadeInUp">
+                        <!-- Pricing Item Header Start -->
+                        <div class="pricing-item-header">
+                            <div class="icon-box">
+                                <img src="images/icon-pricing-item-1.svg" alt="">
+                            </div>
+                            <div class="pricing-item-content">
+                                <h2>Basic Care</h2>
+                                <p>Ideal for individuals seeking medical check - ups and consultations.</p>
+                            </div>
+                            <div class="pricing-item-price">
+                                <h2>$49.00<sub>/Month</sub></h2>
+                            </div>
+                        </div>
+                        <!-- Pricing Item Header End -->
+
+                        <!-- Pricing Item Body Start -->
+                        <div class="pricing-item-body">
+                            <div class="pricing-item-list">
+                                <ul>
+                                    <li>2 General Consultations</li>
+                                    <li>Basic Lab Tests</li>
+                                    <li>Online Health Portal Access</li>
+                                    <li>Prescriptions Services</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-item-btn">
+                                <a href="contact.html" class="btn-default">Choose This Plan</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item Body End -->
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing-item wow fadeInUp">
+                        <!-- Pricing Item Header Start -->
+                        <div class="pricing-item-header">
+                            <div class="icon-box">
+                                <img src="images/icon-pricing-item-2.svg" alt="">
+                            </div>
+                            <div class="pricing-item-content">
+                                <h2>Advanced Care</h2>
+                                <p>Ideal for individuals seeking medical check - ups and consultations.</p>
+                            </div>
+                            <div class="pricing-item-price">
+                                <h2>$69.00<sub>/Month</sub></h2>
+                            </div>
+                        </div>
+                        <!-- Pricing Item Header End -->
+
+                        <!-- Pricing Item Body Start -->
+                        <div class="pricing-item-body">
+                            <div class="pricing-item-list">
+                                <ul>
+                                    <li>2 General Consultations</li>
+                                    <li>Basic Lab Tests</li>
+                                    <li>Online Health Portal Access</li>
+                                    <li>Prescriptions Services</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-item-btn">
+                                <a href="contact.html" class="btn-default">Choose This Plan</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item Body End -->
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Pricing Item Start -->
+                    <div class="pricing-item wow fadeInUp">
+                        <!-- Pricing Item Header Start -->
+                        <div class="pricing-item-header">
+                            <div class="icon-box">
+                                <img src="images/icon-pricing-item-3.svg" alt="">
+                            </div>
+                            <div class="pricing-item-content">
+                                <h2>Premium Care</h2>
+                                <p>Ideal for individuals seeking medical check - ups and consultations.</p>
+                            </div>
+                            <div class="pricing-item-price">
+                                <h2>$99.00<sub>/Month</sub></h2>
+                            </div>
+                        </div>
+                        <!-- Pricing Item Header End -->
+
+                        <!-- Pricing Item Body Start -->
+                        <div class="pricing-item-body">
+                            <div class="pricing-item-list">
+                                <ul>
+                                    <li>2 General Consultations</li>
+                                    <li>Basic Lab Tests</li>
+                                    <li>Online Health Portal Access</li>
+                                    <li>Prescriptions Services</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-item-btn">
+                                <a href="contact.html" class="btn-default">Choose This Plan</a>
+                            </div>
+                        </div>
+                        <!-- Pricing Item Body End -->
+                    </div>
+                    <!-- Pricing Item End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Pricing Benifit List Start -->
+                    <div class="pricing-benefit-list wow fadeInUp" data-wow-delay="0.6s">
+                        <ul>
+                            <li><img src="images/icon-pricing-benefit-1.svg" alt="">Get 30 day free trial</li>
+                            <li><img src="images/icon-pricing-benefit-2.svg" alt="">No any hidden fee pay</li>
+                            <li><img src="images/icon-pricing-benefit-3.svg" alt="">You can cancel anytime </li>
+                        </ul>
+                    </div>
+                    <!-- Pricing Benifit List End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Pricing Section End -->
+
+    <!-- Our Support Section Start -->
+    <div class="our-support">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Emergency Care</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">24/7 emergency support</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Our emergency department is available around the
+                            clock to provide immediate medical assistance and life-saving care when you need it most.
+                        </p>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Support Video Image Box Start -->
+                    <div class="support-video-image-box wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Support CTA Box Start -->
+                        <div class="support-cta-box">
+                            <!-- Support CTA Header Start -->
+                            <div class="support-cta-header">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div class="support-cta-title">
+                                    <h3>Schedule a hours:</h3>
+                                </div>
+                            </div>
+                            <!-- Support CTA Header End -->
+
+                            <!-- Support CTA Body Start -->
+                            <div class="support-cta-body">
+                                <!-- Support CTA List Start -->
+                                <div class="support-cta-list">
+                                    <ul>
+                                        <li><span>Mon to Fri:</span>09:00 AM - 07:00 PM</li>
+                                        <li><span>Saturday:</span>09:00 AM - 07:00 PM</li>
+                                        <li><span>Sunday</span>Closed</li>
+                                    </ul>
+                                </div>
+                                <!-- Support CTA List End -->
+
+                                <!-- Support CTA Button Start -->
+                                <div class="support-cta-btn">
+                                    <a href="contact.html" class="btn-default">24/7 Services for Emergancy</a>
+                                </div>
+                                <!-- Support CTA Button End -->
+                            </div>
+                            <!-- Support CTA Body End -->
+                        </div>
+                        <!-- Support CTA Box End -->
+
+                        <!-- Support Video Box Start -->
+                        <div class="support-video-box">
+                            <!-- Support Video Image Start -->
+                            <div class="support-video-image">
+                                <figure>
+                                    <img src="images/support-video-image.jpg" alt="">
+                                </figure>
+                            </div>
+                            <!-- Support Video Image End -->
+
+                            <!-- Video Play Button Start -->
+                            <div class="video-play-button">
+                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video"
+                                    data-cursor-text="Play">
+                                    <span class="bg-effect"><i class="fa-solid fa-play"></i></span>
+                                </a>
+                            </div>
+                            <!-- Video Play Button End -->
+                        </div>
+                        <!-- Support Video Box End -->
+                    </div>
+                    <!-- Support Video Image Box End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Section Footer Text Start -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.6s">
+                        <p>Browse all professional healthcare services available for you and family</p>
+                        <ul>
+                            <li class="section-footer-content">Trusted By <b>58,900+</b> Users</li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li><span class="counter">4.9</span>/5</li>
+                        </ul>
+                    </div>
+                    <!-- Section Footer Text End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Support Section End -->
+
+
+
+    <!-- Our FAQs Section Start -->
+    <div class="our-faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <!-- FAQ CTA Box Start -->
+                    <div class="faq-cta-box">
+                        <!-- FAQ CTA Image Start -->
+                        <div class="faq-cta-image">
+                            <figure class="image-anime reveal">
+                                <img src="images/faq-cta-image.jpg" alt="">
+                            </figure>
+                        </div>
+                        <!-- FAQ CTA Image End -->
+
+                        <!-- FAQ CTA Body Start -->
+                        <div class="faq-cta-body">
+                            <!-- FAQ CTA Content Start -->
+                            <div class="faq-cta-content wow fadeInUp">
+                                <h3>Have a any Questions !</h3>
+                                <p>If you have any questions about our medical services, appointments, or treatments,
+                                    our team is here to help. We are committed to providing clear information and
+                                    friendly support to ensure you receive the care and guidance you need.</p>
+                            </div>
+                            <!-- FAQ CTA Content End -->
+
+                            <!-- FAQ CTA Button Start -->
+                            <div class="faq-cta-btn wow fadeInUp" data-wow-delay="0.2s">
+                                <a href="faqs.html" class="btn-default">View all Questions</a>
+                            </div>
+                            <!-- FAQ CTA Button End -->
+                        </div>
+                        <!-- FAQ CTA Body End -->
+                    </div>
+                    <!-- FAQ CTA Box End -->
+                </div>
+
+                <div class="col-xl-7">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <span class="section-sub-title wow fadeInUp">Frequently Asked Questions</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Your questions answered about our medical
+                            services</h2>
+                    </div>
+                    <!-- Section Title End -->
+
+                    <!-- FAQ Accordion Start -->
+                    <div class="faq-accordion" id="accordion">
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp">
+                            <h2 class="accordion-header" id="heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                    1. How can I book an appointment with a doctor?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" role="region"
+                                aria-labelledby="heading1" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>We provide a wide range of services including general checkups, cardiology,
+                                        pediatrics, orthopedics, dermatology, and diagnostic tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    2. Do you provide emergency medical services?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" role="region"
+                                aria-labelledby="heading2" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>We provide a wide range of services including general checkups, cardiology,
+                                        pediatrics, orthopedics, dermatology, and diagnostic tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="heading3">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                    3. What medical services do you provide?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse show" role="region"
+                                aria-labelledby="heading3" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>We provide a wide range of services including general checkups, cardiology,
+                                        pediatrics, orthopedics, dermatology, and diagnostic tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    4. How early should I arrive for my appointment?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" role="region"
+                                aria-labelledby="heading4" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>We provide a wide range of services including general checkups, cardiology,
+                                        pediatrics, orthopedics, dermatology, and diagnostic tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                    5. What should I bring to my medical appointment?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" role="region"
+                                aria-labelledby="heading5" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>We provide a wide range of services including general checkups, cardiology,
+                                        pediatrics, orthopedics, dermatology, and diagnostic tests.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                    </div>
+                    <!-- FAQ Accordion End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our FAQs Section End -->
+
+    <!-- Book Appointment Section Start -->
+    <div class="book-appointment bg-section dark-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <!-- Appointment Content Start -->
+                    <div class="our-appointment-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Book an Appointment</span>
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Book your appointment for better health
+                                today</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Google Map Start -->
+                        <div class="google-map-iframe wow fadeInUp" data-wow-delay="0.2s">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <!-- Google Map End -->
+                    </div>
+                    <!-- Appointment Content End -->
+                </div>
+
+                <div class="col-xl-6">
+                    <!-- Appointment Form Start -->
+                    <div class="appointment-form">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h2 class="text-anime-style-3" data-cursor="-opaque">Book an appointment</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Appointment Form Start -->
+                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                            data-wow-delay="0.2s">
+                            <div class="row">
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Full Name" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Email Address" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <input type="text" name="phone" class="form-control" id="phone"
+                                        placeholder="Phone Number" required>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-6 mb-4">
+                                    <select name="service" class="form-control form-select" id="service" required>
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="beginner_driving_course">Beginner Driving Course</option>
+                                        <option value="license_test_preparation">License Test Preparation</option>
+                                        <option value="automatic_car_driving">Automatic Car Driving</option>
+                                        <option value="defensive_training">Defensive Training</option>
+                                        <option value="refresher_driving_courses">Refresher Driving Courses</option>
+                                        <option value="night_driving_lessons">Night Driving Lessons</option>
+                                        <option value="highway_driving_sessions">Highway Driving Sessions</option>
+                                        <option value="road_safety_workshops">Road Safety Workshops</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="form-group col-md-12 mb-5">
+                                    <textarea name="message" class="form-control" id="message" rows="5"
+                                        placeholder="Write Message Here..."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-default btn-highlighted">Submit Message</button>
+                                    <div id="msgSubmit" class="h3 hidden"></div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Appointment Form End -->
+                    </div>
+                    <!-- Appointment Form End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Appointment Section End -->
+
+    <!-- Our Blog Section Start -->
+    <div class="our-blog">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <span class="section-sub-title wow fadeInUp">Latest Article</span>
+                        <h2 class="text-anime-style-3" data-cursor="-opaque">Latest articles and insights on healthcare
+                            trends</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image">
+                            <a href="blog-single.html" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="images/post-1.jpg" alt="">
+                                </figure>
+                            </a>
+                            <div class="post-item-tags">
+                                <a href="blog-single.html">General Health</a>
+                            </div>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-item-content">
+                                <h2><a href="blog-single.html">10 Early Warning Signs You Should Never Ignore</a></h2>
+                            </div>
+                            <div class="post-item-btn">
+                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Item Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image">
+                            <a href="blog-single.html" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="images/post-2.jpg" alt="">
+                                </figure>
+                            </a>
+                            <div class="post-item-tags">
+                                <a href="blog-single.html">Cardiology</a>
+                            </div>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-item-content">
+                                <h2><a href="blog-single.html">Heart Health 101 Simple Habits for a Stronger Heart</a>
+                                </h2>
+                            </div>
+                            <div class="post-item-btn">
+                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Item Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+
+                <div class="col-xl-4 col-md-6">
+                    <!-- Post Item Start -->
+                    <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Post Featured Image Start-->
+                        <div class="post-featured-image">
+                            <a href="blog-single.html" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="images/post-3.jpg" alt="">
+                                </figure>
+                            </a>
+                            <div class="post-item-tags">
+                                <a href="blog-single.html">Pediatrics</a>
+                            </div>
+                        </div>
+                        <!-- Post Featured Image End -->
+
+                        <!-- Post Item Body Start -->
+                        <div class="post-item-body">
+                            <div class="post-item-content">
+                                <h2><a href="blog-single.html">Essential Vaccinations Every Child Should Receive</a>
+                                </h2>
+                            </div>
+                            <div class="post-item-btn">
+                                <a href="blog-single.html" class="readmore-btn">Read More</a>
+                            </div>
+                        </div>
+                        <!-- Post Item Body End -->
+                    </div>
+                    <!-- Post Item End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Blog Section End -->
+
+    <!-- Main Footer Start -->
+    <div class="main-footer bg-section dark-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <!-- Let's Talk Box Start -->
+                    <div class="lets-talk-box">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <span class="section-sub-title wow fadeInUp">Let's Start Your Project</span>
+                            <!-- Let's Talk Title Start -->
+                            <div class="lets-talk-title">
+                                <h2><a href="contact.html">Let's Talk</a></h2>
+                                <!-- Footer Experience Circle Start -->
+                                <div class="years-experience-circle">
+                                    <figure>
+                                        <img src="images/years-experience-circle-accent.svg" alt="">
+                                    </figure>
+                                </div>
+                                <!-- Footer Experience Circle End -->
+                            </div>
+                            <!-- Let's Talk Title End -->
+                        </div>
+                        <!-- Section Title End -->
+                    </div>
+                    <!-- Let's Talk Box End -->
+                </div>
+
+                <div class="col-xl-7">
+                    <!-- Footer Links Box Start -->
+                    <div class="footer-links-box">
+                        <!-- Footer Header Start -->
+                        <div class="footer-header">
+                            <!-- Footer Logo Start -->
+                            <div class="footer-logo">
+                                <img src="images/navoday-logo.png" alt="">
+                            </div>
+                            <!-- Footer Logo End -->
+
+                            <!-- Footer Social Links Start  -->
+                            <div class="footer-social-links">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Footer Social Links End  -->
+                        </div>
+                        <!-- Footer Header End -->
+
+                        <!-- Footer Links Start -->
+                        <div class="footer-links">
+                            <h2>Quick Links</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Our Services</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
+
+                        <!-- Footer Links Start -->
+                        <div class="footer-links">
+                            <h2>Medical Services</h2>
+                            <ul>
+                                <li><a href="service-single.html">Pediatric Care</a></li>
+                                <li><a href="service-single.html">Family Medicine</a></li>
+                                <li><a href="service-single.html">Preventive Healthcare</a></li>
+                                <li><a href="service-single.html">Neurology Treatment</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
+
+                        <!-- Footer Links Start -->
+                        <div class="footer-links">
+                            <h2>Support</h2>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Customer Support</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="contact.html">Contact Support</a></li>
+                            </ul>
+                        </div>
+                        <!-- Footer Links End -->
+                    </div>
+                    <!-- Footer Links Box End -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Footer Copyright Text Start -->
+                        <div class="footer-copyright-text">
+                            <p>Copyright © 2026 All Rights Reserved.</p>
+                        </div>
+                        <!-- Footer Copyright Text End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copyright End -->
+    </div>
+    <!-- Main Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Circle Progress Js File -->
+    <script src="js/circle-progress.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script>
+        /* This controller belongs only to the home-page clinic header. */
+        (function () {
+            var header = document.querySelector('[data-navoday-header]');
+            if (!header) return;
+
+            var menuItems = header.querySelectorAll('.nh-menu-item');
+            var mobileButton = header.querySelector('.nh-mobile-toggle');
+            var mobilePanel = header.querySelector('.nh-mobile-panel');
+            var desktopQuery = window.matchMedia('(min-width: 992px)');
+
+            function setMenuOffset() {
+                header.style.setProperty('--nh-header-bottom', Math.round(header.getBoundingClientRect().bottom) + 'px');
+            }
+
+            function closeDesktopMenus(except) {
+                menuItems.forEach(function (item) {
+                    if (item !== except) {
+                        item.classList.remove('is-open');
+                        item.querySelector('button').setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+
+            menuItems.forEach(function (item) {
+                var button = item.querySelector('button');
+                var flyout = item.querySelector('.nh-flyout');
+                var closeTimer;
+
+                function cancelScheduledClose() {
+                    window.clearTimeout(closeTimer);
+                }
+
+                function scheduleClose() {
+                    if (!desktopQuery.matches) return;
+                    closeTimer = window.setTimeout(function () {
+                        item.classList.remove('is-open');
+                        button.setAttribute('aria-expanded', 'false');
+                    }, 220);
+                }
+
+                button.addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    cancelScheduledClose();
+                    var opening = !item.classList.contains('is-open');
+                    closeDesktopMenus(item);
+                    item.classList.toggle('is-open', opening);
+                    button.setAttribute('aria-expanded', String(opening));
+                    setMenuOffset();
+                });
+                item.addEventListener('mouseenter', function () {
+                    if (!desktopQuery.matches) return;
+                    cancelScheduledClose();
+                    closeDesktopMenus(item);
+                    item.classList.add('is-open');
+                    button.setAttribute('aria-expanded', 'true');
+                    setMenuOffset();
+                });
+                item.addEventListener('mouseleave', scheduleClose);
+                flyout.addEventListener('mouseenter', cancelScheduledClose);
+                flyout.addEventListener('mouseleave', scheduleClose);
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!header.contains(event.target)) closeDesktopMenus();
+            });
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeDesktopMenus();
+                    mobilePanel.classList.remove('is-open');
+                    mobileButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            mobileButton.addEventListener('click', function () {
+                var opening = !mobilePanel.classList.contains('is-open');
+                mobilePanel.classList.toggle('is-open', opening);
+                mobileButton.setAttribute('aria-expanded', String(opening));
+                mobileButton.setAttribute('aria-label', opening ? 'Close navigation' : 'Open navigation');
+            });
+            mobilePanel.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    mobilePanel.classList.remove('is-open');
+                    mobileButton.setAttribute('aria-expanded', 'false');
+                    mobileButton.setAttribute('aria-label', 'Open navigation');
+                });
+            });
+
+            window.addEventListener('resize', function () {
+                setMenuOffset();
+                if (desktopQuery.matches) {
+                    mobilePanel.classList.remove('is-open');
+                    mobileButton.setAttribute('aria-expanded', 'false');
+                } else {
+                    closeDesktopMenus();
+                }
+            });
+            setMenuOffset();
+        }());
+    </script>
+</body>
+
+</html>
