@@ -47,9 +47,18 @@
                                 <a class="nav-link" href="./">Home</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
+                            <li class="nav-item submenu"><a class="nav-link" href="about.html">About</a>
+                                <ul>
+
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="about.html">About (Navoday Clinic)</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="doctor/dr-pradipkumar-tupere.html">About (Dr. Pradipkumar Tupere)</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
 
                             <!-- Conditions Dropdown -->
                             <li class="nav-item submenu">
@@ -89,210 +98,225 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="service.html">
-                                            View all conditions →
-                                        </a>
-                                    </li>
+                                    <a class="nav-link"
+                                                href="conditions/piles-during-pregnancy.html">Piles During Pregnancy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link"
+                                                href="conditions/rectal-bleeding-evaluation-kharadi-pune.html">Rectal
+                                                Bleeding Evaluation and Treatment</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link"
+                                                href="conditions/pain-while-passing-stool-treatment-kharadi-pune.html">Painful
+                                                Bowel Movements</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/anal-itching-treatment-kharadi-pune.html">Anal Itching</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link"
+                                                href="conditions/constipation-treatment-kharadi-pune.html">Constipation
+                                                Treatment</a>
+                                        </li>
+
                                 </ul>
                             </li>
 
                             <!-- Treatments Mega Menu -->
-                            <li class="nav-item submenu index2-treatments-menu">
-                                <a class="nav-link"
-                                   href="services.html"
-                                   aria-expanded="false">
-                                    Treatments
-                                </a>
 
-                                <ul class="treatments-panel">
+                           <li class="nav-item submenu index2-treatments-menu">
+                           <a class="nav-link" href="services.html" aria-expanded="false">
+                             Treatments
+                               </a>
+                             <ul class="treatments-panel">
 
-                                    <!-- Piles -->
-                                    <li>
-                                        <span class="treatment-heading">Piles</span>
+                             <!-- Piles -->
+                             <li>
+                               <span class="treatment-heading">Piles</span>
 
-                                        <ul>
-                                            <li>
-                                                <a href="services.html">
-                                                    Injection Sclerotherapy
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    HAL-RAR Treatment
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    THD (Transanal Dearterialisation)
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Laser Haemorrhoidoplasty
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    MPH (Stapler)
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Infrared Coagulation
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Cryosurgery
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- Fistula -->
-                                    <li>
-                                        <span class="treatment-heading">Fistula</span>
-
-                                        <ul>
-                                            <li>
-                                                <a href="services.html">
-                                                    Laser Fistula Treatment (LFT)
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    FiLaC Laser Closure
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    VAAFT
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Internal Fistulectomy
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    FiLaC with Flap
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Enterovaginal Fistulectomy
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- Fissure -->
-                                    <li>
-                                        <span class="treatment-heading">Fissure</span>
-
-                                        <ul>
-                                            <li>
-                                                <a href="services.html">
-                                                    CLIS Treatment
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Botox Treatment
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Laser Internal Sphincterotomy
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- Pilonidal Sinus -->
-                                    <li>
-                                        <span class="treatment-heading">
-                                            Pilonidal Sinus
-                                        </span>
-
-                                        <ul>
-                                            <li>
-                                                <a href="services.html">
-                                                    Multiple Z-Plasty
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Limberg Flap
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Karydakis Procedure
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Bascom's Cleft Lift
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- Other Procedures -->
-                                    <li>
-                                        <span class="treatment-heading">
-                                            Other Procedures
-                                        </span>
-
-                                        <ul>
-                                            <li>
-                                                <a href="services.html">
-                                                    STARR Procedure
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Whitehead Technique
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Suture Mucoplasty
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Radiofrequency
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="services.html">
-                                                    Video Proctoscopy
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="treatments-all">
-                                        <a href="services.html">
-                                            View all treatments →
-                                        </a>
-                                    </li>
-
-                                </ul>
+                                   <ul>
+                               <li>
+                             <a href="#">
+                                 Injection Sclerotherapy
+                             </a>
                             </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="blog.html">
-                                    Health Blog
-                                </a>
+                             <li>
+                              <a href="#">
+                             HAL-RAR Treatment
+                              </a>
                             </li>
+                            <li>
+                             <a href="#">
+                                 THD (Transanal Dearterialisation)
+                               </a>
+                            </li>
+                                <li>
+                              <a href="#">
+                             Laser Haemorrhoidoplasty
+                              </a>
+                            </li>
+                         <li>
+                        <a href="#">
+                          MPH (Stapler)
+                       </a>
+                     </li>
+                      <li>
+                        <a href="#">
+                        Infrared Coagulation
+                       </a>
+                     </li>
+                    <li>
+                      <a href="#">
+                        Cryosurgery
+                       </a>
+                    </li>
+                  </ul>
+                     </li>
 
-                        </ul>
+                    <!-- Fistula -->
+                       <li>
+                           <span class="treatment-heading">Fistula</span>
 
-                        <!--
+                        <ul>
+                         <li>
+                           <a href="#">
+                        Laser Fistula Treatment (LFT)
+                    </a>
+                          </li>
+                            <li>
+                              <a href="#">
+                              FiLaC Laser Closure
+                             </a>
+                           </li>
+                         <li>
+                            <a href="#">
+                        VAAFT
+                        </a>
+                          </li>
+                        <li>
+                        <a href="#">
+                        Internal Fistulectomy
+                        </a>
+                       </li>
+                        <li>
+                           <a href="#">
+                        FiLaC with Flap
+                          </a>
+                          </li>
+                         <li>
+                    <a href="#">
+                        Enterovaginal Fistulectomy
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Fissure -->
+        <li>
+            <span class="treatment-heading">Fissure</span>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        CLIS Treatment
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Botox Treatment
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Laser Internal Sphincterotomy
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Pilonidal Sinus -->
+        <li>
+            <span class="treatment-heading">
+                Pilonidal Sinus
+            </span>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        Multiple Z-Plasty
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Limberg Flap
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Karydakis Procedure
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Bascom's Cleft Lift
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- Other Procedures -->
+        <li>
+            <span class="treatment-heading">
+                Other Procedures
+            </span>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        STARR Procedure
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Whitehead Technique
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Suture Mucoplasty
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Radiofrequency
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Video Proctoscopy
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="treatments-all">
+            <a href="#">
+                View all treatments →
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#">
+        Health Blog
+    </a>
+</li>
+</ul>
+
+<!--
                             Original legacy navigation retained.
                             Hidden by the original homepage CSS.
                         -->
@@ -551,8 +575,9 @@
                 <div class="about-footer-prime">
 
                     <div class="footer-logo-prime">
-                        <img src="images/navoday-logo.png"
-                             alt="Navoday Clinic Pune logo">
+                         <a href="/">
+                                <img src="images/navoday-logo.png" alt="Navoday Clinic Pune logo">
+                            </a>
                     </div>
 
                     <div class="about-footer-content-prime">
@@ -592,7 +617,7 @@
                             </li>
 
                             <li>
-                                <a href="https://g.co/kgs/navodayclinic"
+                                <a href="https://share.google/4iUmBX8byq7c5ZDeI"
                                    target="_blank"
                                    rel="noopener"
                                    title="Google Business Profile">
@@ -615,7 +640,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About (Navoday Clinic)</a></li>
-                            <li><a href="doctor/drpradipkumar-tupere.html">About (Dr. Pradipkumar Tupere)</a></li>
+                            <li><a href="doctor/dr-pradipkumar-tupere.html">About (Dr. Pradipkumar Tupere)</a></li>
                             <li><a href="service.html">Conditions</a></li>
                             <li><a href="treatments.html">Treatments</a></li>
                             <li><a href="blog.html">Health Blog</a></li>
@@ -761,7 +786,7 @@
                         </p>
 
                         <a
-                            href="https://www.google.com/maps/search/?api=1&amp;query=Navoday%20Clinic%2C%20310%2C%203rd%20Floor%2C%20Zensquare%20Building%2C%20Behind%20Eon%20IT%20Park%20Phase%202%2C%20Kharadi%2C%20Pune%20411014"
+                            href="https://www.google.com/maps/place/Gold+Rush+hospital+%E2%80%94+O%26M+by+Navoday+Clinic+Pvt+Ltd/@18.5501716,73.937304,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c30927ea74c9:0xffeea1dfc1f7bfa0!8m2!3d18.5501716!4d73.937304!16s%2Fg%2F11zyflz8qq?entry=ttu&g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D"
                             class="footer-map-location__directions"
                             target="_blank"
                             rel="noopener">

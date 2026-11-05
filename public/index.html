@@ -1008,6 +1008,7 @@
                 font-weight: 700
             }
         }
+
         /* Footer clinic map, kept self-contained to preserve the existing footer design. */
         .footer-map-location {
             display: grid;
@@ -1019,29 +1020,150 @@
             box-shadow: 0 18px 35px rgba(0, 0, 0, .18)
         }
 
-        .footer-map-location__details { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 42px; color: var(--white-color) }
-        .footer-map-location__eyebrow { margin: 0 0 10px; color: var(--accent-color); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase }
-        .footer-map-location h2 { margin: 0 0 14px; color: var(--white-color); font-size: clamp(26px, 3vw, 38px) }
-        .footer-map-location__details > p:not(.footer-map-location__eyebrow) { margin: 0; color: rgba(255, 255, 255, .78); line-height: 1.65 }
-        .footer-map-location__directions { display: inline-flex; align-items: center; gap: 9px; margin-top: 25px; padding: 13px 20px; border-radius: 8px; color: var(--white-color); background: var(--accent-color); font-weight: 700 }
-        .footer-map-location__directions:hover { color: var(--white-color); background: #c91370 }
-        .footer-map-location iframe { width: 100%; min-height: 300px; border: 0; display: block }
-        .footer-contact-item-prime .icon-box i { color: var(--white-color); font-size: 25px }
+        .footer-map-location__details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 42px;
+            color: var(--white-color)
+        }
+
+        .footer-map-location__eyebrow {
+            margin: 0 0 10px;
+            color: var(--accent-color);
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase
+        }
+
+        .footer-map-location h2 {
+            margin: 0 0 14px;
+            color: var(--white-color);
+            font-size: clamp(26px, 3vw, 38px)
+        }
+
+        .footer-map-location__details>p:not(.footer-map-location__eyebrow) {
+            margin: 0;
+            color: rgba(255, 255, 255, .78);
+            line-height: 1.65
+        }
+
+        .footer-map-location__directions {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: 25px;
+            padding: 13px 20px;
+            border-radius: 8px;
+            color: var(--white-color);
+            background: var(--accent-color);
+            font-weight: 700
+        }
+
+        .footer-map-location__directions:hover {
+            color: var(--white-color);
+            background: #c91370
+        }
+
+        .footer-map-location iframe {
+            width: 100%;
+            min-height: 300px;
+            border: 0;
+            display: block
+        }
+
+        .footer-contact-item-prime .icon-box i {
+            color: var(--white-color);
+            font-size: 25px
+        }
 
         @media(max-width:767px) {
-            .footer-map-location { grid-template-columns: 1fr; margin-top: 20px }
-            .footer-map-location__details { padding: 30px 25px }
-            .footer-map-location iframe { min-height: 260px }
+            .footer-map-location {
+                grid-template-columns: 1fr;
+                margin-top: 20px
+            }
+
+            .footer-map-location__details {
+                padding: 30px 25px
+            }
+
+            .footer-map-location iframe {
+                min-height: 260px
+            }
         }
 
         /* Doctor video trigger. The existing Magnific Popup video modal handles playback. */
-        .doctor-video-trigger { position: relative; isolation: isolate; display: block; color: var(--white-color); overflow: hidden; border-radius: 30px }
-        .doctor-video-trigger figure { position: relative; z-index: 0; margin: 0 }
-        .doctor-video-trigger::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, transparent 42%, rgba(8, 54, 59, .42)); transition: background .25s ease }
-        .doctor-video-trigger::after { content: '▶'; position: absolute; z-index: 2; pointer-events: none; left: 50%; top: 50%; display: grid; place-items: center; width: 62px; height: 62px; border: 2px solid rgba(255, 255, 255, .9); border-radius: 50%; background: var(--accent-color); color: var(--white-color); font-family: Arial, sans-serif; font-size: 22px; line-height: 1; text-indent: 3px; transform: translate(-50%, -50%); transition: transform .25s ease, background .25s ease }
-        .doctor-video-trigger:hover::before, .doctor-video-trigger:focus-visible::before { background: linear-gradient(180deg, rgba(8, 54, 59, .12), rgba(8, 54, 59, .58)) }
-        .doctor-video-trigger:hover::after, .doctor-video-trigger:focus-visible::after { background: var(--primary-color); transform: translate(-50%, -50%) scale(1.08) }
-        .doctor-video-trigger:focus-visible { outline: 3px solid var(--accent-color); outline-offset: 4px }
+        .doctor-video-trigger {
+            position: relative;
+            isolation: isolate;
+            display: block;
+            color: var(--white-color);
+            overflow: hidden;
+            border-radius: 30px
+        }
+
+        .doctor-video-trigger figure {
+            position: relative;
+            z-index: 0;
+            margin: 0
+        }
+
+        .doctor-video-trigger::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            background: linear-gradient(180deg, transparent 42%, rgba(8, 54, 59, .42));
+            transition: background .25s ease
+        }
+
+        .doctor-video-trigger::after {
+            content: '▶';
+            position: absolute;
+            z-index: 2;
+            pointer-events: none;
+            left: 50%;
+            top: 50%;
+            display: grid;
+            place-items: center;
+            width: 62px;
+            height: 62px;
+            border: 2px solid rgba(255, 255, 255, .9);
+            border-radius: 50%;
+            background: var(--accent-color);
+            color: var(--white-color);
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            line-height: 1;
+            text-indent: 3px;
+            transform: translate(-50%, -50%);
+            transition: transform .25s ease, background .25s ease
+        }
+
+        .doctor-video-trigger:hover::before,
+        .doctor-video-trigger:focus-visible::before {
+            background: linear-gradient(180deg, rgba(8, 54, 59, .12), rgba(8, 54, 59, .58))
+        }
+
+        .doctor-video-trigger:hover::after,
+        .doctor-video-trigger:focus-visible::after {
+            background: var(--primary-color);
+            transform: translate(-50%, -50%) scale(1.08)
+        }
+
+        .doctor-video-trigger:focus-visible {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 4px
+        }
+
+        /* HubSpot Form Styling */
+        .hs-form-frame,
+        .hs-form-frame form {
+            background: #fff !important;
+        }
     </style>
 </head>
 
@@ -1072,21 +1194,63 @@
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="index2-menu">
                                 <li class="nav-item"><a class="nav-link" href="./">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="about.html">About</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="about.html">About (Navoday
+                                                Clinic)</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="doctor/dr-pradipkumar-tupere.html">About (Dr. Pradipkumar
+                                                Tupere)</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
                                 <li class="nav-item submenu"><a class="nav-link" href="services.html">Conditions</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="conditions/piles-treatment-kharadi-pune.html">Piles
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/piles-treatment-kharadi-pune.html">Piles
                                                 (Haemorrhoids)</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="conditions/anal-fissure-treatment-kharadi-pune.html">Anal Fissure</a>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/anal-fissure-treatment-kharadi-pune.html">Anal
+                                                Fissure</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="conditions/anal-fistula-treatment-kharadi-pune.html">Anal Fistula</a>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/anal-fistula-treatment-kharadi-pune.html">Anal
+                                                Fistula</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">Pilonidal
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">Pilonidal
                                                 Sinus</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="conditions/anal-stenosis-treatment-kharadi-pune.html">Anal Stricture</a>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/anal-stenosis-treatment-kharadi-pune.html">Anal
+                                                Stricture</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" href="services.html">View all
-                                                conditions →</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/piles-during-pregnancy.html">Piles During Pregnancy</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/rectal-bleeding-evaluation-kharadi-pune.html">Rectal
+                                                Bleeding Evaluation and Treatment</a>
+                                        </li>
+
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/anal-itching-treatment-kharadi-pune.html">Anal
+                                                Itching</a>
+                                        </li>
+
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/pain-while-passing-stool-treatment-kharadi-pune.html">Painful
+                                                Bowel Movements</a>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="conditions/constipation-treatment-kharadi-pune.html">Constipation
+                                                Treatment</a>
+                                        </li>
+
+                                        <!-- <li class="nav-item"><a class="nav-link" href="services.html">View all
+                                                conditions →</a></li> -->
                                     </ul>
                                 </li>
                                 <li class="nav-item submenu index2-treatments-menu"><a class="nav-link"
@@ -1094,54 +1258,54 @@
                                     <ul class="treatments-panel">
                                         <li><span class="treatment-heading">Piles</span>
                                             <ul>
-                                                <li><a href="services.html">Injection Sclerotherapy</a></li>
-                                                <li><a href="services.html">HAL-RAR Treatment</a></li>
-                                                <li><a href="services.html">THD (Transanal Dearterialisation)</a></li>
-                                                <li><a href="services.html">Laser Haemorrhoidoplasty</a></li>
-                                                <li><a href="services.html">MPH (Stapler)</a></li>
-                                                <li><a href="services.html">Infrared Coagulation</a></li>
-                                                <li><a href="services.html">Cryosurgery</a></li>
+                                                <li><a href="#">Injection Sclerotherapy</a></li>
+                                                <li><a href="#">HAL-RAR Treatment</a></li>
+                                                <li><a href="#">THD (Transanal Dearterialisation)</a></li>
+                                                <li><a href="#">Laser Haemorrhoidoplasty</a></li>
+                                                <li><a href="#">MPH (Stapler)</a></li>
+                                                <li><a href="#">Infrared Coagulation</a></li>
+                                                <li><a href="#">Cryosurgery</a></li>
                                             </ul>
                                         </li>
                                         <li><span class="treatment-heading">Fistula</span>
                                             <ul>
-                                                <li><a href="services.html">Laser Fistula Treatment (LFT)</a></li>
-                                                <li><a href="services.html">FiLaC Laser Closure</a></li>
-                                                <li><a href="services.html">VAAFT</a></li>
-                                                <li><a href="services.html">Internal Fistulectomy</a></li>
-                                                <li><a href="services.html">FiLaC with Flap</a></li>
-                                                <li><a href="services.html">Enterovaginal Fistulectomy</a></li>
+                                                <li><a href="#">Laser Fistula Treatment (LFT)</a></li>
+                                                <li><a href="#">FiLaC Laser Closure</a></li>
+                                                <li><a href="#">VAAFT</a></li>
+                                                <li><a href="#">Internal Fistulectomy</a></li>
+                                                <li><a href="#">FiLaC with Flap</a></li>
+                                                <li><a href="#">Enterovaginal Fistulectomy</a></li>
                                             </ul>
                                         </li>
                                         <li><span class="treatment-heading">Fissure</span>
                                             <ul>
-                                                <li><a href="services.html">CLIS Treatment</a></li>
-                                                <li><a href="services.html">Botox Treatment</a></li>
-                                                <li><a href="services.html">Laser Internal Sphincterotomy</a></li>
+                                                <li><a href="#">CLIS Treatment</a></li>
+                                                <li><a href="#">Botox Treatment</a></li>
+                                                <li><a href="#">Laser Internal Sphincterotomy</a></li>
                                             </ul>
                                         </li>
                                         <li><span class="treatment-heading">Pilonidal Sinus</span>
                                             <ul>
-                                                <li><a href="services.html">Multiple Z-Plasty</a></li>
-                                                <li><a href="services.html">Limberg Flap</a></li>
-                                                <li><a href="services.html">Karydakis Procedure</a></li>
-                                                <li><a href="services.html">Bascom's Cleft Lift</a></li>
+                                                <li><a href="#">Multiple Z-Plasty</a></li>
+                                                <li><a href="#">Limberg Flap</a></li>
+                                                <li><a href="#">Karydakis Procedure</a></li>
+                                                <li><a href="#">Bascom's Cleft Lift</a></li>
                                             </ul>
                                         </li>
                                         <li><span class="treatment-heading">Other Procedures</span>
                                             <ul>
-                                                <li><a href="services.html">STARR Procedure</a></li>
-                                                <li><a href="services.html">Whitehead Technique</a></li>
-                                                <li><a href="services.html">Suture Mucoplasty</a></li>
-                                                <li><a href="services.html">Radiofrequency</a></li>
-                                                <li><a href="services.html">Video Proctoscopy</a></li>
+                                                <li><a href="#">STARR Procedure</a></li>
+                                                <li><a href="#">Whitehead Technique</a></li>
+                                                <li><a href="#">Suture Mucoplasty</a></li>
+                                                <li><a href="#">Radiofrequency</a></li>
+                                                <li><a href="#">Video Proctoscopy</a></li>
                                             </ul>
                                         </li>
                                         <li class="treatments-all"><a href="services.html">View all treatments →</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Health Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Health Blog</a></li>
                                 <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
                             </ul>
                             <ul class="navbar-nav mr-auto" id="legacy-index2-menu">
@@ -1168,6 +1332,7 @@
                                         </li>
                                         <li class="nav-item"><a class="nav-link" href="index-2.html">Anal Stricture</a>
                                         </li>
+
                                         <li class="nav-item">
                                             <a class="nav-link btn btn-outline-primary" href="conditions.html"
                                                 style="margin-top: 10px;">View All</a>
@@ -1296,8 +1461,10 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <span class="section-sub-title wow fadeInUp">Navoday Clinic, Kharadi, Pune</span>
-                            <h1 class="text-anime-style-3" data-cursor="-opaque">Proctologist in Pune for Piles, Fissure, Fistula and Pilonidal Sinus Treatment</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Consult Dr. Pradipkumar Tupere, Proctologist and
+                            <h1 class="text-anime-style-3" data-cursor="-opaque">Proctologist in Pune for Piles,
+                                Fissure, Fistula and Pilonidal Sinus Treatment</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Consult Dr. Pradipkumar Tupere, Proctologist
+                                and
                                 General Surgeon trained in laser and stapler techniques. Accurate diagnosis, clear
                                 guidance and a treatment plan made for you.</p>
                         </div>
@@ -1305,9 +1472,10 @@
 
                         <!-- Hero Content Button Start -->
                         <div class="hero-content-btn-prime wow fadeInUp" data-wow-delay="0.2s">
-                            <a href="services.html" class="btn-default btn-highlighted">Book Appointment</a>
-                         
-                             <a href="https://wa.me/919673067007" target="_blank" rel="noopener" class="btn-default btn-whatsapp">
+                            <a href="book-appointment.html" class="btn-default btn-highlighted">Book Appointment</a>
+
+                            <a href="https://wa.me/9922427393" target="_blank" rel="noopener"
+                                class="btn-default btn-whatsapp">
                                 <i class="fa-brands fa-whatsapp" aria-hidden="true" style="margin-right: 6px;"></i>
                                 WhatsApp
                             </a>
@@ -1331,12 +1499,11 @@
                         <!-- Hero CTA Form Start -->
                         <div class="hero-cta-form-prime">
                             <!-- Hero CTA Form Title Start -->
-                            <div class="hero-cta-form-title-prime">
+                            <!-- <div class="hero-cta-form-title-prime">
                                 <h2 class="text-anime-style-3">Request an appointment</h2>
-                            </div>
+                            </div> -->
                             <!-- Hero CTA Form Title End -->
 
-                            <!-- Appointment Form Start -->
                             <form id="appointmentForm" action="#" method="POST" data-toggle="validator"
                                 class="wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="row">
@@ -1355,7 +1522,7 @@
                                     <div class="form-group col-md-12 mb-4">
                                         <select name="concern" class="form-control form-select" id="concern" required>
                                             <option value="" disabled selected>Your concern</option>
-                                            <option value="piles">Piles</option>
+                                            <option value="piles">piles (Haemorrhoids)</option>
                                             <option value="anal_fissure">Anal fissure</option>
                                             <option value="anal_fistula">Anal fistula</option>
                                             <option value="pilonidal_sinus">Pilonidal sinus</option>
@@ -1380,7 +1547,6 @@
                                     </div>
                                 </div>
                             </form>
-                            <!-- Appointment Form End -->
                         </div>
                         <!-- Hero CTA Form End -->
 
@@ -1410,9 +1576,12 @@
                         <div class="about-image-box-1-prime">
                             <!-- About Us Image Start -->
                             <div class="about-image-prime">
-                                <a class="doctor-video-trigger popup-video" href="https://www.youtube.com/watch?v=ZnJZ5OcKlbo" data-cursor-text="Play" aria-label="Play Dr. Pradipkumar Tupere's video">
+                                <a class="doctor-video-trigger popup-video"
+                                    href="https://www.youtube.com/watch?v=ZnJZ5OcKlbo" data-cursor-text="Play"
+                                    aria-label="Play Dr. Pradipkumar Tupere's video">
                                     <figure class="image-anime">
-                                        <img src="images/about (1).png" alt="Dr. Pradipkumar Tupere consulting with a patient">
+                                        <img src="images/about (1).png"
+                                            alt="Dr. Pradipkumar Tupere consulting with a patient">
                                     </figure>
                                 </a>
                             </div>
@@ -1459,17 +1628,19 @@
                         <div class="section-title">
                             <span class="section-sub-title wow fadeInUp">About Doctor</span>
                             <h2 class="text-anime-style-3" data-cursor="-opaque">Meet Dr. Pradipkumar Tupere</h2>
-                            
+
                             <div class="about-expanding-bio">
                                 <p>Proctologist and General Surgeon. MBBS, MS (General Surgery).
                                 </p>
                                 <p class="wow fadeInUp" data-wow-delay="0.2s">
-                                    Dr. Pradipkumar Tupere is a proctologist and general surgeon who treats  piles (Haemorrhoids), anal
+                                    Dr. Pradipkumar Tupere is a proctologist and general surgeon who treats piles
+                                    (Haemorrhoids), anal
                                     fissure, anal fistula, pilonidal sinus and other anorectal conditions. He completed
                                     his MBBS at Shri Bhausaheb Hire Government Medical College, Dhule, and his MS in
                                     General Surgery at B.J. Medical College, Pune.
                                 </p>
-                                <button class="expand-bio-btn" type="button" aria-expanded="false" style="border: none; background-color: #fff; font-size: 16px; font-weight: 600; color: rgb(237, 0, 123); margin-top: 20px;"
+                                <button class="expand-bio-btn" type="button" aria-expanded="false"
+                                    style="border: none; background-color: #fff; font-size: 16px; font-weight: 600; color: rgb(237, 0, 123); margin-top: 20px;"
                                     aria-controls="bio-extra"
                                     onclick="this.nextElementSibling.hidden=!this.nextElementSibling.hidden;this.setAttribute('aria-expanded',!this.nextElementSibling.hidden);this.innerText=this.nextElementSibling.hidden?'Read more +':'Read less -';">
                                     Read more +
@@ -1508,7 +1679,8 @@
 
                             <!-- About Author Info Content Start -->
                             <div class="about-author-info-content-prime">
-                                <h3>“A good result starts with a clear diagnosis. I examine you first, explain your options, and then plan the treatment with you -
+                                <h3>“A good result starts with a clear diagnosis. I examine you first, explain your
+                                    options, and then plan the treatment with you -
                                     <span class="text-white"> Dr. Pradipkumar Tupere</span>
                                 </h3>
                             </div>
@@ -1518,7 +1690,7 @@
 
                         <!-- About Us Button Start -->
                         <div class="about-us-btn-prime wow fadeInUp" data-wow-delay="0.6s">
-                            <a href="about.html" class="btn-default">Read his full profile</a>
+                            <a href="doctor/dr-pradipkumar-tupere.html" class="btn-default">Read his full profile</a>
                         </div>
                         <!-- About Us Button End -->
                     </div>
@@ -1536,9 +1708,11 @@
                 <div class="col-lg-12">
                     <!-- Section Title Start -->
                     <div class="section-title section-title-center">
-                        <span class="section-sub-title wow fadeInUp text-dark" >Our Services</span>
-                        <h2 class="text-anime-style-3 text-white" data-cursor="-opaque">Piles, fissure, fistula and other conditions we treat</h2>
-                        <p class="text-white"> Piles, fissures and fistulas are common and treatable. Getting examined early often gives you more options.</p>
+                        <span class="section-sub-title wow fadeInUp text-dark">Our Services</span>
+                        <h2 class="text-anime-style-3 text-white" data-cursor="-opaque">Piles, fissure, fistula and
+                            other conditions we treat</h2>
+                        <p class="text-white"> Piles, fissures and fistulas are common and treatable. Getting examined
+                            early often gives you more options.</p>
                     </div>
                     <!-- Section Title End -->
                 </div>
@@ -1548,16 +1722,18 @@
                 <div class="col-xl-4 col-md-6">
                     <!-- Service Item Start -->
                     <div class="service-item-prime wow fadeInUp">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-piles.jpg" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-piles.jpg"
+                                alt=""></div>
                         <div class="service-item-header-prime">
-                         
-                                <img src="images/service-icon (1).png" alt="Piles (Haemorrhoids)">
-                            
+
+                            <img src="images/service-icon (1).png" alt="Piles (Haemorrhoids)">
+
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Piles (Haemorrhoids)</h2>
                             <p>Treatment options chosen after examination.</p>
-                            <a href="service-single.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="conditions/piles-treatment-kharadi-pune.html" class="service-read-more">Read More
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -1566,16 +1742,18 @@
                 <div class="col-xl-4 col-md-6">
                     <!-- Service Item Start -->
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-fissure.jpg" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-fissure.webp"
+                                alt=""></div>
                         <div class="service-item-header-prime">
-                           
-                                <img src="images/service-icon (2).png" alt="Anal Fissure">
-                            
+
+                            <img src="images/service-icon (2).png" alt="Anal Fissure">
+
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Anal Fissure</h2>
                             <p>Care tailored to your symptoms and diagnosis.</p>
-                            <a href="anal-fissure.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="conditions/anal-fissure-treatment-kharadi-pune.html" class="service-read-more">Read
+                                More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -1584,16 +1762,18 @@
                 <div class="col-xl-4 col-md-6">
                     <!-- Service Item Start -->
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-fistula.jpg" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-fistula.webp"
+                                alt=""></div>
                         <div class="service-item-header-prime">
-                            
-                                <img src="images/service-icon (3).png" alt="Anal Fistula">
-                            
+
+                            <img src="images/service-icon (3).png" alt="Anal Fistula">
+
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Anal Fistula</h2>
                             <p>Advanced care for simple and complex fistulas.</p>
-                            <a href="anal-fistula.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="conditions/anal-fistula-treatment-kharadi-pune.html" class="service-read-more">Read
+                                More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -1602,16 +1782,19 @@
                 <div class="col-xl-4 col-md-6">
                     <!-- Service Item Start -->
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/service-hover-pilonidal-sinus.jpg" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img
+                                src="images/service-hover-pilonidal-sinus.jpg" alt=""></div>
                         <div class="service-item-header-prime">
-                            
-                                <img src="images/service-icon (4).png" alt="Pilonidal Sinus">
-                          
+
+                            <img src="images/service-icon (4).png" alt="Pilonidal Sinus">
+
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Pilonidal Sinus</h2>
                             <p>Care for recurrent or infected pilonidal sinus.</p>
-                            <a href="pilonidal-sinus.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="conditions/pilonidal-sinus-treatment-kharadi-pune.html"
+                                class="service-read-more">Read More <i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- Service Item End -->
@@ -1620,81 +1803,92 @@
                 <div class="col-xl-4 col-md-6">
                     <!-- Service Item Start -->
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/navoday-branded-05-anatomy.png" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img
+                                src="images/navoday-branded-05-anatomy.png" alt=""></div>
                         <div class="service-item-header-prime">
-                            
-                                <img src="images/service-icon (5).png" alt="Anal Stricture">
-                         
+
+                            <img src="images/service-icon (5).png" alt="Anal Stricture">
+
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Anal Stricture</h2>
                             <p>Targeted care for painful bowel movements.</p>
-                            <a href="anal-stricture.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="conditions/anal-stenosis-treatment-kharadi-pune.html"
+                                class="service-read-more">Read More <i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <!-- Service Item End -->
                 </div>
 
                 <div class="col-xl-4 col-md-6">
-              
+
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="1s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/navoday-branded-01-abscess.png" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img
+                                src="images/navoday-branded-01-abscess.png" alt=""></div>
                         <div class="service-item-header-prime">
                             <img src="images/service-icon (5).png" alt="Perianal Abscess">
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Perianal Abscess</h2>
                             <p>Prompt treatment for painful perianal abscess and swelling.</p>
-                            <a href="perianal-abscess.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="#" class="service-read-more">Read More <i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-xl-4 col-md-6">
-                  
+
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="1.1s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/navoday-branded-02-constipation.png" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img
+                                src="images/navoday-branded-02-constipation.png" alt=""></div>
                         <div class="service-item-header-prime">
                             <img src="images/service-icon (5).png" alt="Constipation">
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Constipation</h2>
                             <p>Solutions and management for chronic constipation and straining.</p>
-                            <a href="constipation.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="conditions/constipation-treatment-kharadi-pune.html" class="service-read-more">Read
+                                More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                   
+
                 </div>
                 <div class="col-xl-4 col-md-6">
-                    
+
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/navoday-branded-03-pelvic-anatomy.png" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img
+                                src="images/navoday-branded-03-pelvic-anatomy.png" alt=""></div>
                         <div class="service-item-header-prime">
                             <img src="images/service-icon (5).png" alt="Obstructed Defecation Syndrome">
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Obstructed Defecation Syndrome</h2>
                             <p>Advanced options for ODS and bowel evacuation issues.</p>
-                            <a href="obstructed-defecation-syndrome.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="#" class="service-read-more">Read More <i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-xl-4 col-md-6">
-                 
+
                     <div class="service-item-prime wow fadeInUp" data-wow-delay="1.3s">
-                        <div class="service-hover-image" aria-hidden="true"><img src="images/navoday-branded-04-stool-anatomy.png" alt=""></div>
+                        <div class="service-hover-image" aria-hidden="true"><img
+                                src="images/navoday-branded-04-stool-anatomy.png" alt=""></div>
                         <div class="service-item-header-prime">
                             <img src="images/service-icon (2).png" alt="Fecal Incontinence">
                         </div>
                         <div class="sevice-item-content-prime">
                             <h2>Fecal Incontinence</h2>
                             <p>Care and support for accidental bowel leakage or loss of control.</p>
-                            <a href="fecal-incontinence.html" class="service-read-more">Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            <a href="#" class="service-read-more">Read More <i class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
-                 
-                </div> 
+
+                </div>
 
                 <!-- <div class="col-xl-4 col-md-6">
                     
@@ -1737,8 +1931,10 @@
                             </div>
                         </div>
                         <!-- Satisfy Client Images End -->
-                        <p class="text-white"> Not sure what you have? Bleeding, pain, itching or a lump near the anus are all reasons to get examined.- <a
-                                href="services.html" class="text-white">View all services</a></p>
+                        <p class="text-white"> Not sure what you have? Bleeding, pain, itching or a lump near the anus
+                            are all reasons to get examined.
+                            <!-- - <a href="services.html" class="text-white">View all
+                                services</a></p> -->
                     </div>
                     <!-- Section Footer Text End -->
                 </div>
@@ -1761,7 +1957,8 @@
                     <div class="why-choose-card-icon"><img src="images/icon-why-choose-item-1-prime.svg" alt=""></div>
                     <span class="why-choose-card-number">01</span>
                     <h3>Accurate diagnosis</h3>
-                    <p>Your care starts with a proper examination, so the type, grade and severity of your problem are clear before any treatment is suggested.</p>
+                    <p>Your care starts with a proper examination, so the type, grade and severity of your problem are
+                        clear before any treatment is suggested.</p>
                 </article>
                 <article class="why-choose-card wow fadeInUp" data-wow-delay="0.15s">
                     <div class="why-choose-card-icon"><img src="images/icon-why-choose-item-1-prime.svg" alt=""></div>
@@ -1773,7 +1970,8 @@
                     <div class="why-choose-card-icon"><img src="images/icon-why-choose-item-1-prime.svg" alt=""></div>
                     <span class="why-choose-card-number">03</span>
                     <h3>Individualised treatment planning</h3>
-                    <p>Your plan considers your diagnosis, how complex it is, your medical history and your recovery needs.</p>
+                    <p>Your plan considers your diagnosis, how complex it is, your medical history and your recovery
+                        needs.</p>
                 </article>
             </div>
         </div>
@@ -1795,32 +1993,49 @@
                     <div class="section-title">
                         <span class="section-sub-title wow fadeInUp">How It Works</span>
                         <h2 class="text-anime-style-3" data-cursor="-opaque">From your first call to follow-up</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.1s">We guide you through every step of your healthcare journey from the moment you schedule your appointment to follow-up care &amp; long term wellness support.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.1s">We guide you through every step of your healthcare
+                            journey from the moment you schedule your appointment to follow-up care &amp; long term
+                            wellness support.</p>
                     </div>
 
                     <div class="process-timeline">
                         <article class="process-timeline-item wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="process-timeline-marker"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i><span>01</span></div>
-                            <div class="process-timeline-copy"><h3>Book your visit</h3><p>Call, message on WhatsApp or use the form. We confirm your appointment slot.</p></div>
+                            <div class="process-timeline-marker"><i class="fa-solid fa-calendar-check"
+                                    aria-hidden="true"></i><span>01</span></div>
+                            <div class="process-timeline-copy">
+                                <h3>Book your visit</h3>
+                                <p>Call, message on WhatsApp or use the form. We confirm your appointment slot.</p>
+                            </div>
                         </article>
                         <article class="process-timeline-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="process-timeline-marker"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span>02</span></div>
-                            <div class="process-timeline-copy"><h3>Consultation and examination</h3><p>Dr. Tupere listens to your symptoms and examines you in a private setting.</p></div>
+                            <div class="process-timeline-marker"><i class="fa-solid fa-stethoscope"
+                                    aria-hidden="true"></i><span>02</span></div>
+                            <div class="process-timeline-copy">
+                                <h3>Consultation and examination</h3>
+                                <p>Dr. Tupere listens to your symptoms and examines you in a private setting.</p>
+                            </div>
                         </article>
                         <article class="process-timeline-item wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="process-timeline-marker"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><span>03</span></div>
-                            <div class="process-timeline-copy"><h3>Your treatment plan and follow-up</h3><p>He explains your diagnosis and your options, and answers your questions before anything is decided. If a procedure is advised, you are guided through preparation, the procedure and recovery.</p></div>
+                            <div class="process-timeline-marker"><i class="fa-solid fa-clipboard-check"
+                                    aria-hidden="true"></i><span>03</span></div>
+                            <div class="process-timeline-copy">
+                                <h3>Your treatment plan and follow-up</h3>
+                                <p>He explains your diagnosis and your options, and answers your questions before
+                                    anything is decided. If a procedure is advised, you are guided through preparation,
+                                    the procedure and recovery.</p>
+                            </div>
                         </article>
                     </div>
 
-                    <div class="process-timeline-action wow fadeInUp" data-wow-delay="0.5s"><a href="contact.html" class="btn-default">Contact Us</a></div>
+                    <div class="process-timeline-action wow fadeInUp" data-wow-delay="0.5s"><a
+                            href="book-appointment.html" class="btn-default">Contact Us</a></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- How It Work Section End -->
 
-   
+
     <!-- Recognition Section Start -->
     <section class="recognition-section awards-showcase-section">
         <div class="container">
@@ -1829,7 +2044,8 @@
                     <span class="section-sub-title wow fadeInUp">Our Excellence</span>
                     <h2 class="text-anime-style-3" data-cursor="-opaque">Awards & Major Achievements</h2>
                 </div>
-                <p class="wow fadeInUp" data-wow-delay="0.15s">A record of community service, clinical excellence and continued professional learning.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.15s">A record of community service, clinical excellence and
+                    continued professional learning.</p>
             </div>
 
             <div class="awards-slider wow fadeInUp" data-wow-delay="0.2s">
@@ -1837,30 +2053,66 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <article class="post-item award-post-card">
-                                <div class="post-featured-image"><figure><img src="images/awwards/Dadasaheb-Phalke-Community-Achievement-2.png" alt="Recognition award presentation"></figure><div class="post-item-tags"><span>2013</span></div></div>
-                                <div class="post-item-body"><div class="post-item-content"><h2 class="text-white">Dadasaheb Phalke Community Achievement Award</h2><p class="mb-0 text-white text-justify">Received for social work through piles treatment camps using injection therapy.</p></div><div class="award-post-meta"><i class="fa-solid fa-award" aria-hidden="true"></i> Community achievement</div></div>
+                                <div class="post-featured-image">
+                                    <figure><img src="images/awwards/Dadasaheb-Phalke-Community-Achievement-2.png"
+                                            alt="Recognition award presentation"></figure>
+                                    <div class="post-item-tags"><span>2013</span></div>
+                                </div>
+                                <div class="post-item-body">
+                                    <div class="post-item-content">
+                                        <h2 class="text-white">Dadasaheb Phalke Community Achievement Award</h2>
+                                        <p class="mb-0 text-white text-justify">Received for social work through piles
+                                            treatment camps using injection therapy.</p>
+                                    </div>
+                                    <div class="award-post-meta"><i class="fa-solid fa-award" aria-hidden="true"></i>
+                                        Community achievement</div>
+                                </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="post-item award-post-card">
-                                <div class="post-featured-image"><figure><img src="images/awwards/3rd-mt.jpeg" alt="Recognition award presentation"></figure><div class="post-item-tags"><span>2013</span></div></div>
-                                <div class="post-item-body"><div class="post-item-content"><h2 class="text-white">India's Best Doctors (Proctology)</h2><p class="mb-0 text-white">Certificate of Excellence, 3rd MT India Healthcare Awards, Medgate Today.</p></div><div class="award-post-meta"><i class="fa-solid fa-award" aria-hidden="true"></i> Certificate of Excellence</div></div>
+                                <div class="post-featured-image">
+                                    <figure><img src="images/awwards/3rd-mt.jpeg" alt="Recognition award presentation">
+                                    </figure>
+                                    <div class="post-item-tags"><span>2013</span></div>
+                                </div>
+                                <div class="post-item-body">
+                                    <div class="post-item-content">
+                                        <h2 class="text-white">India's Best Doctors (Proctology)</h2>
+                                        <p class="mb-0 text-white">Certificate of Excellence, 3rd MT India Healthcare
+                                            Awards, Medgate Today.</p>
+                                    </div>
+                                    <div class="award-post-meta"><i class="fa-solid fa-award" aria-hidden="true"></i>
+                                        Certificate of Excellence</div>
+                                </div>
                             </article>
                         </div>
                         <div class="swiper-slide">
                             <article class="post-item award-post-card">
-                                <div class="post-featured-image"><figure><img src="images/awwards/Six-Sigma.jpeg" alt="Recognition award presentation"></figure><div class="post-item-tags"><span>2013</span></div></div>
-                                <div class="post-item-body"><div class="post-item-content"><h2 class="text-white">Rural Healthcare Initiative</h2><p class="mb-0 text-white">Certificate of Appreciation, Six Sigma Healthcare Excellence Awards.</p></div><div class="award-post-meta"><i class="fa-solid fa-award" aria-hidden="true"></i> Certificate of Appreciation</div></div>
+                                <div class="post-featured-image">
+                                    <figure><img src="images/awwards/Six-Sigma.jpeg"
+                                            alt="Recognition award presentation"></figure>
+                                    <div class="post-item-tags"><span>2013</span></div>
+                                </div>
+                                <div class="post-item-body">
+                                    <div class="post-item-content">
+                                        <h2 class="text-white">Rural Healthcare Initiative</h2>
+                                        <p class="mb-0 text-white">Certificate of Appreciation, Six Sigma Healthcare
+                                            Excellence Awards.</p>
+                                    </div>
+                                    <div class="award-post-meta"><i class="fa-solid fa-award" aria-hidden="true"></i>
+                                        Certificate of Appreciation</div>
+                                </div>
                             </article>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- Intro Video Section Start -->
-     <div class="intro-video-box-prime bg-section" style="max-width: 900px;">
+    <!-- Intro Video Section Start -->
+    <div class="intro-video-box-prime bg-section" style="max-width: 900px;">
         <div class="container-fluid">
             <div class="row no-gutters">
                 <div class="col-lg-12">
@@ -1895,36 +2147,73 @@
             <div class="treatment-options-heading">
                 <div class="section-title">
                     <span class="section-sub-title wow fadeInUp">Treatment Options</span>
-                    <h2 id="treatment-options-title" class="text-anime-style-3" data-cursor="-opaque">Piles, fissure and fistula treatment options, chosen after examination</h2>
+                    <h2 id="treatment-options-title" class="text-anime-style-3" data-cursor="-opaque">Piles, fissure and
+                        fistula treatment options, chosen after examination</h2>
                 </div>
-                <p class="wow fadeInUp" data-wow-delay="0.2s">Dr. Tupere recommends a treatment only after consultation, clinical examination and diagnosis. Surgery is not the answer for every patient.</p>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">Dr. Tupere recommends a treatment only after consultation,
+                    clinical examination and diagnosis. Surgery is not the answer for every patient.</p>
             </div>
 
             <div class="treatment-cards-grid wow fadeInUp">
                 <article class="treatment-category-card">
-                    <div class="treatment-card-heading"><span class="treatment-card-number">01</span><h3>Piles</h3></div>
-                    <div class="treatment-pills"><span class="treatment-pill">Injection sclerotherapy</span><span class="treatment-pill">HAL-RAR treatment</span><span class="treatment-pill">THD (Transanal Haemorrhoidal Dearterialisation)</span><span class="treatment-pill">Laser haemorrhoidoplasty</span><span class="treatment-pill">Stapler procedure (MIPH)</span><span class="treatment-pill">Infrared coagulation</span><span class="treatment-pill">Cryosurgery</span></div>
+                    <div class="treatment-card-heading"><span class="treatment-card-number">01</span>
+                        <h3>Piles</h3>
+                    </div>
+                    <div class="treatment-pills"><span class="treatment-pill">Injection sclerotherapy</span><span
+                            class="treatment-pill">HAL-RAR treatment</span><span class="treatment-pill">Transanal
+                            Haemorrhoidal Dearterialisation (THD)</span><span class="treatment-pill">Laser
+                            haemorrhoidoplasty</span><span class="treatment-pill">Stapler procedure (MIPH)</span><span
+                            class="treatment-pill">Infrared coagulation</span><span
+                            class="treatment-pill">Cryosurgery</span></div>
                 </article>
 
                 <article class="treatment-category-card">
-                    <div class="treatment-card-heading"><span class="treatment-card-number">02</span><h3>Fistula</h3></div>
-                    <div class="treatment-pills"><span class="treatment-pill">Laser fistula treatment (LFT)</span><span class="treatment-pill">FiLaC laser closure</span><span class="treatment-pill">VAAFT (video-assisted anal fistula treatment)</span><span class="treatment-pill">Internal fistulectomy</span><span class="treatment-pill">FiLaC with flap for complex fistula</span></div>
+                    <div class="treatment-card-heading"><span class="treatment-card-number">02</span>
+                        <h3>Fistula</h3>
+                    </div>
+                    <div class="treatment-pills"><span class="treatment-pill">Laser fistula treatment (LFT)</span>
+                        <span class="treatment-pill">FiLaC laser closure</span>
+                        <span class="treatment-pill">video-assisted anal fistula treatment (VAAFT)</span>
+                        <span class="treatment-pill">Internal
+                            fistulectomy</span>
+                        <span class="treatment-pill">FiLaC with flap for complex fistula</span>
+                        <span class="treatment-pill">Fistulotomy</span>
+                        <span class="treatment-pill">LIFT procedure</span>
+                    </div>
                 </article>
 
                 <article class="treatment-category-card">
-                    <div class="treatment-card-heading"><span class="treatment-card-number">03</span><h3>Fissure</h3></div>
-                    <div class="treatment-pills"><span class="treatment-pill">CLIS treatment</span><span class="treatment-pill">Botox treatment</span><span class="treatment-pill">Laser internal sphincterotomy</span></div>
+                    <div class="treatment-card-heading"><span class="treatment-card-number">03</span>
+                        <h3>Fissure</h3>
+                    </div>
+                    <div class="treatment-pills"><span class="treatment-pill">CLIS treatment</span><span
+                            class="treatment-pill">Botox treatment</span>
+                        <span class="treatment-pill">Laser internal sphincterotomy</span>
+                        <span class="treatment-pill">Fibre and stool-softening treatment</span>
+                        <span class="treatment-pill">Topical diltiazem or nifedipine treatment</span>
+                        <span class="treatment-pill">Topical nitroglycerin treatment</span>
+                        <span class="treatment-pill">Anal advancement flap</span>
+                    </div>
                 </article>
 
                 <article class="treatment-category-card">
-                    <div class="treatment-card-heading"><span class="treatment-card-number">04</span><h3>Pilonidal Sinus</h3></div>
-                    <div class="treatment-pills"><span class="treatment-pill">Multiple Z-plasty</span><span class="treatment-pill">Limberg (rhomboid) flap</span><span class="treatment-pill">Karydakis procedure</span><span class="treatment-pill">Bascom's cleft lift</span></div>
+                    <div class="treatment-card-heading"><span class="treatment-card-number">04</span>
+                        <h3>Pilonidal Sinus</h3>
+                    </div>
+                    <div class="treatment-pills"><span class="treatment-pill">Multiple Z-plasty</span><span
+                            class="treatment-pill">Limberg (rhomboid) flap</span><span class="treatment-pill">Karydakis
+                            procedure</span><span class="treatment-pill">Bascom's cleft lift</span>
+                        <span class="treatment-pill">Pit-picking procedure</span>
+                        <span class="treatment-pill">Endoscopic pilonidal sinus treatment (EPSiT)</span>
+                        <span class="treatment-pill">Excision with open wound healing</span>
+                    </div>
                 </article>
             </div>
 
-            <div class="treatment-options-action wow fadeInUp">
+            <!-- <div class="treatment-options-action wow fadeInUp">
                 <a href="services.html" class="btn-default">View all treatments</a>
-            </div>
+            </div> -->
+
         </div>
     </section>
     <!-- Treatment Options Section End -->
@@ -1935,12 +2224,13 @@
             <div class="row">
                 <div class="section-title">
                     <span class="section-sub-title wow fadeInUp">Frequently Asked Questions</span>
-                    <h2 class="text-anime-style-3" data-cursor="-opaque"> Straight answers to what patients ask before a first visit.
+                    <h2 class="text-anime-style-3" data-cursor="-opaque"> Straight answers to what patients ask before a
+                        first visit.
                     </h2>
                 </div>
                 <div class="col-xl-6 col-lg-9">
                     <!-- Section Title Start -->
-                   
+
                     <!-- Section Title End -->
 
                     <!-- FAQ Accordion Start -->
@@ -1949,7 +2239,8 @@
                         <div class="accordion-item wow fadeInUp">
                             <h2 class="accordion-header" id="heading1-piles">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse1-piles" aria-expanded="true" aria-controls="collapse1-piles">
+                                    data-bs-target="#collapse1-piles" aria-expanded="true"
+                                    aria-controls="collapse1-piles">
                                     When should I see a doctor for piles (Haemorrhoids)?
                                 </button>
                             </h2>
@@ -1957,7 +2248,9 @@
                                 aria-labelledby="heading1-piles" data-bs-parent="#accordion-piles">
                                 <div class="accordion-body">
                                     <p>
-                                        See a doctor if you notice bleeding while passing stool, a lump near the anus, pain or itching that does not settle, or symptoms that keep coming back. Bleeding should always be examined, because other conditions can look similar.
+                                        See a doctor if you notice bleeding while passing stool, a lump near the anus,
+                                        pain or itching that does not settle, or symptoms that keep coming back.
+                                        Bleeding should always be examined, because other conditions can look similar.
                                     </p>
                                 </div>
                             </div>
@@ -1968,7 +2261,8 @@
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                             <h2 class="accordion-header" id="heading2-piles">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse2-piles" aria-expanded="false" aria-controls="collapse2-piles">
+                                    data-bs-target="#collapse2-piles" aria-expanded="false"
+                                    aria-controls="collapse2-piles">
                                     Do all piles (Haemorrhoids) need surgery?
                                 </button>
                             </h2>
@@ -1976,7 +2270,10 @@
                                 aria-labelledby="heading2-piles" data-bs-parent="#accordion-piles">
                                 <div class="accordion-body">
                                     <p>
-                                        No. Early-stage piles (Haemorrhoids) are often managed with diet, lifestyle changes and medicines. A procedure is considered when symptoms continue or the piles (Haemorrhoids) are more advanced, and Dr. Tupere advises the right option after examining you.
+                                        No. Early-stage piles (Haemorrhoids) are often managed with diet, lifestyle
+                                        changes and medicines. A procedure is considered when symptoms continue or the
+                                        piles (Haemorrhoids) are more advanced, and Dr. Tupere advises the right option
+                                        after examining you.
                                     </p>
                                 </div>
                             </div>
@@ -1987,7 +2284,8 @@
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                             <h2 class="accordion-header" id="heading3-piles">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse3-piles" aria-expanded="false" aria-controls="collapse3-piles">
+                                    data-bs-target="#collapse3-piles" aria-expanded="false"
+                                    aria-controls="collapse3-piles">
                                     What is the difference between piles (Haemorrhoids), fissure and fistula?
                                 </button>
                             </h2>
@@ -1995,7 +2293,10 @@
                                 aria-labelledby="heading3-piles" data-bs-parent="#accordion-piles">
                                 <div class="accordion-body">
                                     <p>
-                                        Piles are swollen blood vessels in the anal canal. A fissure is a small tear in the lining of the anus. A fistula is an abnormal channel between the anal canal and the skin nearby. They can cause similar symptoms, such as pain and bleeding, so an examination is needed to tell them apart.
+                                        Piles are swollen blood vessels in the anal canal. A fissure is a small tear in
+                                        the lining of the anus. A fistula is an abnormal channel between the anal canal
+                                        and the skin nearby. They can cause similar symptoms, such as pain and bleeding,
+                                        so an examination is needed to tell them apart.
                                     </p>
                                 </div>
                             </div>
@@ -2006,7 +2307,8 @@
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                             <h2 class="accordion-header" id="heading4-piles">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse4-piles" aria-expanded="false" aria-controls="collapse4-piles">
+                                    data-bs-target="#collapse4-piles" aria-expanded="false"
+                                    aria-controls="collapse4-piles">
                                     Is it piles (Haemorrhoids) or a fissure? How can I tell?
                                 </button>
                             </h2>
@@ -2014,7 +2316,10 @@
                                 aria-labelledby="heading4-piles" data-bs-parent="#accordion-piles">
                                 <div class="accordion-body">
                                     <p>
-                                        Both cause pain and bleeding near the anus, but they are different problems. A fissure is a small tear that usually hurts sharply during and after a motion. Piles are swollen veins and often bleed with little pain. Only an examination can confirm which one you have.
+                                        Both cause pain and bleeding near the anus, but they are different problems. A
+                                        fissure is a small tear that usually hurts sharply during and after a motion.
+                                        Piles are swollen veins and often bleed with little pain. Only an examination
+                                        can confirm which one you have.
                                     </p>
                                 </div>
                             </div>
@@ -2025,7 +2330,8 @@
                         <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
                             <h2 class="accordion-header" id="heading5-piles">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse5-piles" aria-expanded="false" aria-controls="collapse5-piles">
+                                    data-bs-target="#collapse5-piles" aria-expanded="false"
+                                    aria-controls="collapse5-piles">
                                     Can a fistula be treated without surgery?
                                 </button>
                             </h2>
@@ -2033,7 +2339,9 @@
                                 aria-labelledby="heading5-piles" data-bs-parent="#accordion-piles">
                                 <div class="accordion-body">
                                     <p>
-                                        Most anal fistulas do not heal with medicines or creams alone, because the tunnel needs a procedure to close it. The right method depends on where the fistula runs, and Dr. Tupere decides this after an examination.
+                                        Most anal fistulas do not heal with medicines or creams alone, because the
+                                        tunnel needs a procedure to close it. The right method depends on where the
+                                        fistula runs, and Dr. Tupere decides this after an examination.
                                     </p>
                                 </div>
                             </div>
@@ -2044,7 +2352,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-9">
                     <!-- Section Title Start -->
-                   
+
                     <!-- Section Title End -->
 
                     <!-- FAQ Accordion Start -->
@@ -2061,7 +2369,9 @@
                                 aria-labelledby="heading1" data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <p>
-                                        Not always. The right procedure depends on the type and grade of the problem and your overall health. Laser, stapler and other minimally invasive options are discussed only after an examination.
+                                        Not always. The right procedure depends on the type and grade of the problem and
+                                        your overall health. Laser, stapler and other minimally invasive options are
+                                        discussed only after an examination.
                                     </p>
                                 </div>
                             </div>
@@ -2080,7 +2390,10 @@
                                 aria-labelledby="heading2" data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <p>
-                                        The cost depends on the condition, the procedure chosen, the type of anaesthesia and the facility used. A fixed price cannot be given before an examination, so Dr. Tupere explains the plan and the expected cost at your consultation. <span style="color: #f39c12;">[Clinic to confirm what can be stated]</span>
+                                        The cost depends on the condition, the procedure chosen, the type of anaesthesia
+                                        and the facility used. A fixed price cannot be given before an examination, so
+                                        Dr. Tupere explains the plan and the expected cost at your consultation. <span
+                                            style="color: #f39c12;">[Clinic to confirm what can be stated]</span>
                                     </p>
                                 </div>
                             </div>
@@ -2099,7 +2412,9 @@
                                 aria-labelledby="heading3" data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <p>
-                                        Yes. Pressure during pregnancy, constipation and childbirth can cause piles (Haemorrhoids). Many settle after delivery, but see a doctor if there is bleeding, pain or a lump.
+                                        Yes. Pressure during pregnancy, constipation and childbirth can cause piles
+                                        (Haemorrhoids). Many settle after delivery, but see a doctor if there is
+                                        bleeding, pain or a lump.
                                     </p>
                                 </div>
                             </div>
@@ -2137,7 +2452,9 @@
                                 aria-labelledby="heading5" data-bs-parent="#accordion">
                                 <div class="accordion-body">
                                     <p>
-                                        Navoday Clinic is at Navoday Vlinic ,310 ,3rd Foor ,Zensquare Bldg.Behind Eon IT park Phase -2 , Kharadi, Pune. Call [phone number], message on WhatsApp [number] or use the appointment form. Consultation days and timings: [days and timings].
+                                        Navoday Clinic is at Navoday Vlinic ,310 ,3rd Foor ,Zensquare Bldg.Behind Eon IT
+                                        park Phase -2 , Kharadi, Pune. Call [phone number], message on WhatsApp [number]
+                                        or use the appointment form. Consultation days and timings: [days and timings].
                                     </p>
                                 </div>
                             </div>
@@ -2174,24 +2491,26 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="post-item wow fadeInUp">
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/blog (1).png" alt="">
                                 </figure>
                             </a>
                             <div class="post-item-tags">
-                                <a href="blog-single.html">Conditions</a>
+                                <a href="#">Conditions</a>
                             </div>
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2 class="text-white"><a href="blog-single.html">Piles, fissure or fistula: how to tell the difference</a></h2>
+                                <h2 class="text-white"><a href="#">Piles, fissure or fistula: how to tell
+                                        the difference</a></h2>
                                 <p class="mb-2 text-white">
-                                    The symptoms overlap, so here is what each one usually feels like and why an examination matters.
+                                    The symptoms overlap, so here is what each one usually feels like and why an
+                                    examination matters.
                                 </p>
                             </div>
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn text-white">Read More</a>
+                                <a href="#" class="readmore-btn text-white">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -2200,24 +2519,26 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/blog (2).png" alt="">
                                 </figure>
                             </a>
                             <div class="post-item-tags">
-                                <a href="blog-single.html">Lifestyle</a>
+                                <a href="#">Lifestyle</a>
                             </div>
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2 class="text-white"><a href="blog-single.html">Diet and daily habits that help prevent constipation and piles (Haemorrhoids)</a></h2>
+                                <h2 class="text-white"><a href="#">Diet and daily habits that help
+                                        prevent constipation and piles (Haemorrhoids)</a></h2>
                                 <p class="mb-2 text-white">
-                                    Simple changes in fibre, water and toilet habits that ease pressure on the anal area.
+                                    Simple changes in fibre, water and toilet habits that ease pressure on the anal
+                                    area.
                                 </p>
                             </div>
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn text-white">Read More</a>
+                                <a href="#" class="readmore-btn text-white">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -2226,24 +2547,26 @@
                 <div class="col-xl-4 col-md-6">
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/blog (3).png" alt="">
                                 </figure>
                             </a>
                             <div class="post-item-tags">
-                                <a href="blog-single.html">Symptoms</a>
+                                <a href="#">Symptoms</a>
                             </div>
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2 class="text-white"><a href="blog-single.html">Rectal bleeding: when to see a doctor</a></h2>
-                                <p class="mb-2 text-white" >
-                                    Not all bleeding is piles (Haemorrhoids), so know the signs that need a prompt examination.
+                                <h2 class="text-white"><a href="#">Rectal bleeding: when to see a
+                                        doctor</a></h2>
+                                <p class="mb-2 text-white">
+                                    Not all bleeding is piles (Haemorrhoids), so know the signs that need a prompt
+                                    examination.
                                 </p>
                             </div>
                             <div class="post-item-btn">
-                                <a href="blog-single.html" class="readmore-btn text-white">Read More</a>
+                                <a href="#" class="readmore-btn text-white">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -2252,7 +2575,7 @@
             <!-- Button to read more articles -->
             <div class="row">
                 <div class="col-12 text-center mt-4">
-                    <a href="blog.html" class="btn-default">Read more articles</a>
+                    <a href="#" class="btn-default">Read more articles</a>
                 </div>
             </div>
         </div>
@@ -2268,14 +2591,17 @@
                     <div class="about-footer-prime">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo-prime">
-                            <img src="images/navoday-logo.png" alt="Navoday Clinic Pune logo">
+                            <a href="/">
+                                <img src="images/navoday-logo.png" alt="Navoday Clinic Pune logo">
+                            </a>
                         </div>
                         <!-- Footer Logo End -->
 
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content-prime">
                             <p>
-                                Specialist care for piles (Haemorrhoids), fissure, fistula and pilonidal sinus in Kharadi, Pune.
+                                Specialist care for piles (Haemorrhoids), fissure, fistula and pilonidal sinus in
+                                Kharadi, Pune.
                             </p>
                         </div>
                         <!-- About Footer Content End -->
@@ -2300,7 +2626,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://g.co/kgs/navodayclinic" target="_blank" rel="noopener" title="Google Business Profile">
+                                    <a href="https://share.google/4iUmBX8byq7c5ZDeI" target="_blank" rel="noopener"
+                                        title="Google Business Profile">
                                         <i class="fa-brands fa-google"></i>
                                     </a>
                                 </li>
@@ -2331,14 +2658,19 @@
                                 <li><a href="conditions/piles-treatment-kharadi-pune.html">Piles</a></li>
                                 <li><a href="conditions/anal-fissure-treatment-kharadi-pune.html">Anal Fissure</a></li>
                                 <li><a href="conditions/anal-fistula-treatment-kharadi-pune.html">Anal Fistula</a></li>
-                                <li><a href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">Pilonidal Sinus</a></li>
-                                <li><a href="conditions/anal-stenosis-treatment-kharadi-pune.html">Anal Stricture</a></li>
+                                <li><a href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">Pilonidal Sinus</a>
+                                </li>
+                                <li><a href="conditions/anal-stenosis-treatment-kharadi-pune.html">Anal Stricture</a>
+                                </li>
                                 <li><a href="conditions/piles-during-pregnancy.html">Piles During Pregnancy</a></li>
-                                <li><a href="conditions/rectal-bleeding-evaluation-kharadi-pune.html">Rectal Bleeding Evaluation and Treatment</a></li>
-                                <li><a href="conditions/pain-while-passing-stool-treatment-kharadi-pune.html">Painful Bowel Movements</a></li>
-                                <li><a href="conditions/constipation-treatment-kharadi-pune.html">Constipation Treatment</a></li>
-                                <li class="nav-item"><a class="nav-link" href="services.html">View all
-                                                conditions →</a></li>
+                                <li><a href="conditions/rectal-bleeding-evaluation-kharadi-pune.html">Rectal Bleeding
+                                        Evaluation and Treatment</a></li>
+                                <li><a href="conditions/pain-while-passing-stool-treatment-kharadi-pune.html">Painful
+                                        Bowel Movements</a></li>
+                                <li><a href="conditions/constipation-treatment-kharadi-pune.html">Constipation
+                                        Treatment</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link" href="services.html">View all
+                                        conditions →</a></li> -->
                             </ul>
                         </div>
                         <div class="footer-links-prime footer-privacy-policy-prime">
@@ -2365,7 +2697,8 @@
                             </div>
                             <div class="footer-contact-item-content-prime">
                                 <p>Navoday Clinic</p>
-                                <h3>310, 3rd Floor, Zensquare Building, Behind Eon IT Park Phase 2, Kharadi, Pune 411014</h3>
+                                <h3>310, 3rd Floor, Zensquare Building, Behind Eon IT Park Phase 2, Kharadi, Pune 411014
+                                </h3>
                             </div>
                         </div>
                         <!-- Phone -->
@@ -2388,7 +2721,8 @@
                             <div class="footer-contact-item-content-prime">
                                 <p>WhatsApp</p>
                                 <h3>
-                                    <a href="https://wa.me/917720868686" target="_blank" rel="noopener">+91 7720 868 686</a>
+                                    <a href="https://wa.me/9922427393" target="_blank" rel="noopener">+91 7720 868
+                                        686</a>
                                 </h3>
                             </div>
                         </div>
@@ -2422,11 +2756,15 @@
                             <p class="footer-map-location__eyebrow">Visit Navoday Clinic</p>
                             <h2>Find us in Kharadi</h2>
                             <p>Conveniently located near Eon IT Park at Zensquare Building.</p>
-                            <a href="https://www.google.com/maps/search/?api=1&amp;query=Navoday%20Clinic%2C%20310%2C%203rd%20Floor%2C%20Zensquare%20Building%2C%20Behind%20Eon%20IT%20Park%20Phase%202%2C%20Kharadi%2C%20Pune%20411014" class="footer-map-location__directions" target="_blank" rel="noopener">
+                            <a href="https://www.google.com/maps/place/Gold+Rush+hospital+%E2%80%94+O%26M+by+Navoday+Clinic+Pvt+Ltd/@18.5501716,73.937304,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2c30927ea74c9:0xffeea1dfc1f7bfa0!8m2!3d18.5501716!4d73.937304!16s%2Fg%2F11zyflz8qq?entry=ttu&g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D"
+                                class="footer-map-location__directions" target="_blank" rel="noopener">
                                 Get directions <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                             </a>
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.437424740381!2d73.94302667621251!3d18.55516038256769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3355f2a4f83%3A0x1abcfe1234567890!2sNavoday%20Clinic%2C%20310%2C%203rd%20Floor%2C%20Zensquare%20Building%2C%20Behind%20Eon%20IT%20Park%20Phase%20-%202%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v0000000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Navoday Clinic Kharadi Map"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.437424740381!2d73.94302667621251!3d18.55516038256769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3355f2a4f83%3A0x1abcfe1234567890!2sNavoday%20Clinic%2C%20310%2C%203rd%20Floor%2C%20Zensquare%20Building%2C%20Behind%20Eon%20IT%20Park%20Phase%20-%202%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v0000000000000"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Navoday Clinic Kharadi Map"></iframe>
                     </div>
                 </div>
 
@@ -2438,7 +2776,8 @@
                             Medical registration no. 2012/05/2332
                         </p>
                         <p style="font-size: 0.97em; margin: 4px 0;">
-                            <strong>Disclaimer:</strong> The information on this website is for general awareness and does not replace a medical consultation. Treatment is advised only after examination.
+                            <strong>Disclaimer:</strong> The information on this website is for general awareness and
+                            does not replace a medical consultation. Treatment is advised only after examination.
                         </p>
                         <p>
                             © 2026 Navoday Clinic. All rights reserved.
@@ -2539,6 +2878,68 @@
             });
             setPanelPosition();
         }(jQuery));
+    </script>
+
+    <!-- WhatsApp Click-to-Chat Integration for Appointment Form -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var appointmentForm = document.getElementById('appointmentForm');
+            if (appointmentForm) {
+                appointmentForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Check if form has validation errors using Bootstrap Validator
+                    var $form = $(this);
+                    var validator = $form.data('bs.validator');
+
+                    // If validator exists and has errors, don't proceed
+                    if (validator && validator.hasErrors && validator.hasErrors()) {
+                        return;
+                    }
+
+                    // Additional check: look for Bootstrap Validator error elements
+                    if ($form.find('.has-error').length > 0) {
+                        return;
+                    }
+
+                    // Collect form data
+                    var name = document.getElementById('name').value.trim();
+                    var mobile = document.getElementById('mobile').value.trim();
+                    var concernSelect = document.getElementById('concern');
+                    var concern = concernSelect.options[concernSelect.selectedIndex].text;
+
+                    // Format the concern value - if it's the default placeholder, handle it
+                    if (concernSelect.value === '') {
+                        concern = 'Not specified';
+                    }
+
+                    // Generate WhatsApp message
+                    var message = '📋 *NEW APPOINTMENT REQUEST*\n' +
+                        '━━━━━━━━━━━━━━━━━━\n' +
+                        'Hello Navoday Team! 👋\n' +
+                        'A new appointment request has been received through the website.\n\n' +
+                        '👤 *PATIENT DETAILS*\n' +
+                        '🧑 Name: ' + name + '\n' +
+                        '📱 Mobile Number: ' + mobile + '\n' +
+                        '🩺 Concern: ' + concern + '\n' +
+                        '━━━━━━━━━━━━━━━━━━\n' +
+                        '📅 Please contact the patient to discuss availability and confirm the appointment.\n' +
+                        'Thank you! 🙏';
+
+                    // URL encode the message
+                    var encodedMessage = encodeURIComponent(message);
+
+                    // WhatsApp number
+                    var whatsappNumber = '919922427393';
+
+                    // Create WhatsApp URL
+                    var whatsappUrl = 'https://wa.me/' + whatsappNumber + '?text=' + encodedMessage;
+
+                    // Open WhatsApp in new tab
+                    window.open(whatsappUrl, '_blank');
+                });
+            }
+        });
     </script>
 </body>
 
