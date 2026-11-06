@@ -405,7 +405,7 @@ a:focus{
 
 .dark-section{
 	background-color: var(--primary-color);
-	background-image: url('../images/low_poly_background.jpg');
+	background-image: url('../images/low_poly_background1.png');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -3624,7 +3624,7 @@ width: 50px;
     position: relative;
     display: block;
     text-transform: capitalize;
-	color: inherit;
+	color: var(--white-color);
     padding-right: 25px;
 	transition: all 0.4s ease-in-out;
 }

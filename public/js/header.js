@@ -47,14 +47,14 @@
                                 <a class="nav-link" href="./">Home</a>
                             </li>
 
-                            <li class="nav-item submenu"><a class="nav-link" href="about.html">About</a>
+                            <li class="nav-item submenu"><a class="nav-link" href="about">About</a>
                                 <ul>
 
                                         <li class="nav-item"><a class="nav-link"
-                                                href="about.html">About (Navoday Clinic)</a>
+                                                href="about">About (Navoday Clinic)</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="doctor/dr-pradipkumar-tupere.html">About (Dr. Pradipkumar Tupere)</a>
+                                                href="doctor/dr-pradipkumar-tupere">About (Dr. Pradipkumar Tupere)</a>
                                         </li>
                                         
                                     </ul>
@@ -62,61 +62,61 @@
 
                             <!-- Conditions Dropdown -->
                             <li class="nav-item submenu">
-                                <a class="nav-link" href="service.html">
+                                <a class="nav-link" href="service">
                                     Conditions
                                 </a>
 
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/piles-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/piles-treatment-kharadi-pune">
                                             Piles (Haemorrhoids)
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/anal-fissure-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/anal-fissure-treatment-kharadi-pune">
                                             Anal Fissure
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/anal-fistula-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/anal-fistula-treatment-kharadi-pune">
                                             Anal Fistula
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/pilonidal-sinus-treatment-kharadi-pune">
                                             Pilonidal Sinus
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/anal-stenosis-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/anal-stenosis-treatment-kharadi-pune">
                                             Anal Stricture
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
                                     <a class="nav-link"
-                                                href="conditions/piles-during-pregnancy.html">Piles During Pregnancy</a>
+                                                href="conditions/piles-during-pregnancy">Piles During Pregnancy</a>
                                         </li>
                                         <li class="nav-item">
                                         <a class="nav-link"
-                                                href="conditions/rectal-bleeding-evaluation-kharadi-pune.html">Rectal
+                                                href="conditions/rectal-bleeding-evaluation-kharadi-pune">Rectal
                                                 Bleeding Evaluation and Treatment</a>
                                         </li>
                                         <li class="nav-item">
                                         <a class="nav-link"
-                                                href="conditions/pain-while-passing-stool-treatment-kharadi-pune.html">Painful
+                                                href="conditions/pain-while-passing-stool-treatment-kharadi-pune">Painful
                                                 Bowel Movements</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
-                                                href="conditions/anal-itching-treatment-kharadi-pune.html">Anal Itching</a>
+                                                href="conditions/anal-itching-treatment-kharadi-pune">Anal Itching</a>
                                         </li>
                                         <li class="nav-item">
                                         <a class="nav-link"
-                                                href="conditions/constipation-treatment-kharadi-pune.html">Constipation
+                                                href="conditions/constipation-treatment-kharadi-pune">Constipation
                                                 Treatment</a>
                                         </li>
 
@@ -126,7 +126,7 @@
                             <!-- Treatments Mega Menu -->
 
                            <li class="nav-item submenu index2-treatments-menu">
-                           <a class="nav-link" href="services.html" aria-expanded="false">
+                           <a class="nav-link" href="services" aria-expanded="false">
                              Treatments
                                </a>
                              <ul class="treatments-panel">
@@ -326,17 +326,17 @@
                                 <a class="nav-link" href="./">Home</a>
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.html">
+                                        <a class="nav-link" href="index">
                                             Home - Version 1
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index-2.html">
+                                        <a class="nav-link" href="index-2">
                                             Home - Version 2
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index-3.html">
+                                        <a class="nav-link" href="index-3">
                                             Home - Version 3
                                         </a>
                                     </li>
@@ -344,32 +344,32 @@
                             </li>
 
                             <li class="nav-item submenu">
-                                <a class="nav-link" href="conditions/piles-treatment-kharadi-pune.html">
+                                <a class="nav-link" href="conditions/piles-treatment-kharadi-pune">
                                     Conditions
                                 </a>
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/piles-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/piles-treatment-kharadi-pune">
                                             Piles (Haemorrhoids)
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/anal-fissure-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/anal-fissure-treatment-kharadi-pune">
                                             Anal Fissure
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/anal-fistula-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/anal-fistula-treatment-kharadi-pune">
                                             Anal Fistula
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/pilonidal-sinus-treatment-kharadi-pune">
                                             Pilonidal Sinus
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="conditions/anal-stenosis-treatment-kharadi-pune.html">
+                                        <a class="nav-link" href="conditions/anal-stenosis-treatment-kharadi-pune">
                                             Anal Stricture
                                         </a>
                                     </li>
@@ -394,33 +394,16 @@
                                     <li>
                                         <div>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
-                                               style="margin-top:10px;">View All</a>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div>
-                                            <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
-                                               style="margin-top:10px;">View All</a>
-                                            <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
-                                               style="margin-top:10px;">View All</a>
-                                            <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
-                                               style="margin-top:10px;">View All</a>
-                                            <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                         </div>
                                     </li>
@@ -428,16 +411,33 @@
                                     <li>
                                         <div>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
+                                               style="margin-top:10px;">View All</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div>
+                                            <a class="nav-link btn btn-outline-primary"
+                                               href="conditions"
+                                               style="margin-top:10px;">View All</a>
+                                            <a class="nav-link btn btn-outline-primary"
+                                               href="conditions"
+                                               style="margin-top:10px;">View All</a>
+                                            <a class="nav-link btn btn-outline-primary"
+                                               href="conditions"
+                                               style="margin-top:10px;">View All</a>
+                                            <a class="nav-link btn btn-outline-primary"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                         </div>
                                     </li>
@@ -446,23 +446,23 @@
                                         <div>
                                             <h4>piles</h4>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                             <a class="nav-link btn btn-outline-primary"
-                                               href="conditions.html"
+                                               href="conditions"
                                                style="margin-top:10px;">View All</a>
                                         </div>
                                     </li>
 
                                     <li class="nav-item">
                                         <a class="nav-link btn btn-outline-primary"
-                                           href="conditions.html"
+                                           href="conditions"
                                            style="margin-top:10px;">
                                             View All
                                         </a>
@@ -472,13 +472,13 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">
+                                <a class="nav-link" href="about">
                                     About Us
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="blog.html">
+                                <a class="nav-link" href="blog">
                                     Blog
                                 </a>
                             </li>
@@ -489,40 +489,40 @@
                                 </a>
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="service-single.html">Service Details</a>
+                                        <a class="nav-link" href="service-single">Service Details</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="blog-single.html">Blog Details</a>
+                                        <a class="nav-link" href="blog-single">Blog Details</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="case-study.html">Case Study</a>
+                                        <a class="nav-link" href="case-study">Case Study</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="case-study-single.html">Case Study Details</a>
+                                        <a class="nav-link" href="case-study-single">Case Study Details</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="team.html">Our Team</a>
+                                        <a class="nav-link" href="team">Our Team</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="team-single.html">Team Details</a>
+                                        <a class="nav-link" href="team-single">Team Details</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pricing.html">Pricing Plan</a>
+                                        <a class="nav-link" href="pricing">Pricing Plan</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                                        <a class="nav-link" href="testimonials">Testimonials</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="image-gallery.html">Image Gallery</a>
+                                        <a class="nav-link" href="image-gallery">Image Gallery</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="video-gallery.html">Video Gallery</a>
+                                        <a class="nav-link" href="video-gallery">Video Gallery</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="faqs.html">FAQs</a>
+                                        <a class="nav-link" href="faqs">FAQs</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="404.html">404</a>
+                                        <a class="nav-link" href="404">404</a>
                                     </li>
                                 </ul>
                             </li>
@@ -530,7 +530,7 @@
                            
 
                             <li class="nav-item highlighted-menu">
-                                <a class="nav-link" href="book-appointment.html">
+                                <a class="nav-link" href="book-appointment">
                                     Book Appointment
                                 </a>
                             </li>
@@ -541,7 +541,7 @@
 
                     <!-- Header Button -->
                     <div class="header-btn">
-                        <a href="book-appointment.html"
+                        <a href="book-appointment"
                            class="btn-default btn-highlighted">
                             Book Appointment
                         </a>
@@ -638,40 +638,39 @@
                     <div class="footer-links-prime footer-quick-links-prime">
                         <h2>Quick Links</h2>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About (Navoday Clinic)</a></li>
-                            <li><a href="doctor/dr-pradipkumar-tupere.html">About (Dr. Pradipkumar Tupere)</a></li>
-                            <li><a href="service.html">Conditions</a></li>
-                            <li><a href="treatments.html">Treatments</a></li>
-                            <li><a href="blog.html">Health Blog</a></li>
+                            <li><a href="index">Home</a></li>
+                            <li><a href="about">About (Navoday Clinic)</a></li>
+                            <li><a href="doctor/dr-pradipkumar-tupere">About (Dr. Pradipkumar Tupere)</a></li>
+                            <li><a href="service">Conditions</a></li>
+                            <li><a href="treatments">Treatments</a></li>
+                            <li><a href="blog">Health Blog</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-links-prime footer-service-links-prime">
                         <h2>Conditions</h2>
                         <ul>
-                            <li><a href="conditions/piles-treatment-kharadi-pune.html">Piles</a></li>
-                            <li><a href="conditions/anal-fissure-treatment-kharadi-pune.html">Anal Fissure</a></li>
-                            <li><a href="conditions/anal-fistula-treatment-kharadi-pune.html">Anal Fistula</a></li>
-                            <li><a href="conditions/pilonidal-sinus-treatment-kharadi-pune.html">Pilonidal Sinus</a></li>
-                            <li><a href="conditions/anal-stenosis-treatment-kharadi-pune.html">Anal Stricture</a></li>
-                            <li><a href="conditions/piles-during-pregnancy.html">Piles During Pregnancy</a></li>
-                            <li><a href="conditions/rectal-bleeding-evaluation-kharadi-pune.html">Rectal Bleeding Evaluation and Treatment</a></li>
-                            <li><a href="conditions/pain-while-passing-stool-treatment-kharadi-pune.html">Painful Bowel Movements</a></li>
-                            <li><a href="conditions/constipation-treatment-kharadi-pune.html">Constipation Treatment</a></li>
-                            <li class="nav-item"><a class="nav-link" href="services.html">View all
-                                                conditions →</a></li>
+                            <li><a href="conditions/piles-treatment-kharadi-pune">Piles (Haemorrhoids)</a></li>
+                            <li><a href="conditions/anal-fissure-treatment-kharadi-pune">Anal Fissure</a></li>
+                            <li><a href="conditions/anal-fistula-treatment-kharadi-pune">Anal Fistula</a></li>
+                            <li><a href="conditions/pilonidal-sinus-treatment-kharadi-pune">Pilonidal Sinus</a></li>
+                            <li><a href="conditions/anal-stenosis-treatment-kharadi-pune">Anal Stricture</a></li>
+                            <li><a href="conditions/piles-during-pregnancy">Piles During Pregnancy</a></li>
+                            <li><a href="conditions/rectal-bleeding-evaluation-kharadi-pune">Rectal Bleeding Evaluation and Treatment</a></li>
+                            <li><a href="conditions/pain-while-passing-stool-treatment-kharadi-pune">Painful Bowel Movements</a></li>
+                            <li><a href="conditions/constipation-treatment-kharadi-pune">Constipation</a></li>
+                           
                         </ul>
                     </div>
 
                     <div class="footer-links-prime footer-privacy-policy-prime">
                         <h2>Resources</h2>
                         <ul>
-                            <li><a href="health-tips.html">Health Tips</a></li>
-                            <li><a href="faqs.html">FAQs</a></li>
-                            <li><a href="book-appointment.html">Contact</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+                            <li><a href="health-tips">Health Tips</a></li>
+                            <li><a href="faqs">FAQs</a></li>
+                            <li><a href="book-appointment">Contact</a></li>
+                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                            <li><a href="terms-and-conditions">Terms and Conditions</a></li>
                         </ul>
                     </div>
 
@@ -692,9 +691,7 @@
                         <div class="footer-contact-item-content-prime">
                             <p>Navoday Clinic</p>
                             <h3>
-                                310, 3rd Floor, Zensquare Building,
-                                Behind Eon IT Park Phase 2,
-                                Kharadi, Pune 411014
+                                Mundwa -Kharadi Rd, near Nyati Plaza, Thite Nagar, Kharadi, Pune, Maharashtra 411014
                             </h3>
                         </div>
                     </div>
@@ -724,10 +721,10 @@
                         <div class="footer-contact-item-content-prime">
                             <p>WhatsApp</p>
                             <h3>
-                                <a href="https://wa.me/917720868686"
+                                <a href="https://wa.me/919922427393"
                                    target="_blank"
                                    rel="noopener">
-                                    +91 7720 868 686
+                                    +91 9922427393 
                                 </a>
                             </h3>
                         </div>
@@ -781,8 +778,7 @@
                         <h2>Find us in Kharadi</h2>
 
                         <p>
-                            Conveniently located near Eon IT Park
-                            at Zensquare Building.
+                            Conveniently located near Nyati Plaza, Thite Nagar, Kharadi, Pune.
                         </p>
 
                         <a
@@ -800,7 +796,7 @@
                     </div>
 
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.437424740381!2d73.94302667621251!3d18.55516038256769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3355f2a4f83%3A0x1abcfe1234567890!2sNavoday%20Clinic%2C%20310%2C%203rd%20Floor%2C%20Zensquare%20Building%2C%20Behind%20Eon%20IT%20Park%20Phase%20-%202%2C%20Kharadi%2C%20Pune%2C%20Maharashtra%20411014!5e0!3m2!1sen!2sin!4v0000000000000"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.529068189906!2d73.937304!3d18.550171600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c30927ea74c9%3A0xffeea1dfc1f7bfa0!2sGold%20Rush%20hospital%20%E2%80%94%20O%26M%20by%20Navoday%20Clinic%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1793943542140!5m2!1sen!2sin"
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
                         title="Navoday Clinic Kharadi Map">
