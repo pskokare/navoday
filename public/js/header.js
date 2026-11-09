@@ -27,13 +27,37 @@
 
     const headerHTML = `
 <header class="main-header index2-clinic-header" data-index2-header>
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="top-bar-content">
+                        <div class="top-bar-left">
+                            <span class="top-bar-text">Gold Rush hospital — O&M by Navoday Clinic Pvt Ltd</span>
+                        </div>
+                        <div class="top-bar-right">
+                            
+                            <span class="top-bar-separator">|</span>
+                            <a href="tel:+917744828282" class="top-bar-link">
+                                <i class="fa-solid fa-phone"></i>
+                                Call Us: +91 7744828282
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
     <div class="header-sticky">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
 
                 <!-- Logo Start -->
                 <a class="navbar-brand" href="./">
-                    <img src="images/navoday-logo.png" alt="Logo">
+                    <img src="images/navodayclinic1.png" alt="Logo">
                 </a>
                 <!-- Logo End -->
 
@@ -51,7 +75,7 @@
                                 <ul>
 
                                         <li class="nav-item"><a class="nav-link"
-                                                href="about">About (Navoday Clinic)</a>
+                                                href="about">About (Gold Rush hospital — O&M by Navoday Clinic Pvt. Ltd)</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link"
                                                 href="doctor/dr-pradipkumar-tupere">About (Dr. Pradipkumar Tupere)</a>
@@ -576,7 +600,7 @@
 
                     <div class="footer-logo-prime">
                          <a href="/">
-                                <img src="images/navoday-logo.png" alt="Navoday Clinic Pune logo">
+                                <img src="images/navodayclinic1.png" alt="Navoday Clinic Pune logo">
                             </a>
                     </div>
 
@@ -639,7 +663,7 @@
                         <h2>Quick Links</h2>
                         <ul>
                             <li><a href="index">Home</a></li>
-                            <li><a href="about">About (Navoday Clinic)</a></li>
+                            <li><a href="about">About (Gold Rush hospital — O&M by Navoday Clinic Pvt. Ltd)</a></li>
                             <li><a href="doctor/dr-pradipkumar-tupere">About (Dr. Pradipkumar Tupere)</a></li>
                             <li><a href="service">Conditions</a></li>
                             <li><a href="treatments">Treatments</a></li>
@@ -689,7 +713,7 @@
                         </div>
 
                         <div class="footer-contact-item-content-prime">
-                            <p>Navoday Clinic</p>
+                            <p>Gold Rush hospital — O&M by Navoday Clinic Pvt. Ltd</p>
                             <h3>
                                 Mundwa -Kharadi Rd, near Nyati Plaza, Thite Nagar, Kharadi, Pune, Maharashtra 411014
                             </h3>
@@ -705,8 +729,8 @@
                         <div class="footer-contact-item-content-prime">
                             <p>Phone</p>
                             <h3>
-                                <a href="tel:+917720868686">
-                                    +91 7720 868 686
+                                <a href="tel:+917744828282">
+                                    +91 7744828282 
                                 </a>
                             </h3>
                         </div>
@@ -721,10 +745,10 @@
                         <div class="footer-contact-item-content-prime">
                             <p>WhatsApp</p>
                             <h3>
-                                <a href="https://wa.me/919922427393"
+                                <a href="https://wa.me/917744828282 "
                                    target="_blank"
                                    rel="noopener">
-                                    +91 9922427393 
+                                    +91 7744828282  
                                 </a>
                             </h3>
                         </div>
@@ -756,8 +780,8 @@
                         <div class="footer-contact-item-content-prime">
                             <p>Timings</p>
                             <h3>
-                                Monday - Saturday:
-                                10:00 AM - 2:00 PM, 5:00 PM - 9:00 PM
+                                Monday - Thursday:
+                                11:00 AM - 10:00 PM, Monday - Thursday: 11:00 AM - 10:00 PM
                                 <br>
                                 Sunday: Closed
                             </h3>
@@ -772,7 +796,7 @@
                     <div class="footer-map-location__details">
 
                         <p class="footer-map-location__eyebrow">
-                            Visit Navoday Clinic
+                            Visit Gold Rush hospital — O&M by Navoday Clinic Pvt. Ltd
                         </p>
 
                         <h2>Find us in Kharadi</h2>
@@ -827,7 +851,7 @@
                     </p>
 
                     <p>
-                        © 2026 Navoday Clinic. All rights reserved.
+                        © 2026 Gold Rush hospital — O&M by Navoday Clinic Pvt. Ltd. All rights reserved.
                     </p>
 
                 </div>
@@ -837,6 +861,19 @@
         </div>
     </div>
 </div>
+
+<!-- Mobile Floating Navigation Start -->
+<div class="mobile-floating-nav d-lg-none">
+    <a href="https://wa.me/917744828282" target="_blank" rel="noopener" class="mobile-floating-btn mobile-whatsapp-btn">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+    </a>
+    <a href="tel:+917744828282" class="mobile-floating-btn mobile-call-btn">
+        <i class="fa-solid fa-phone"></i>
+        Call
+    </a>
+</div>
+<!-- Mobile Floating Navigation End -->
 `;
 
     /* ==========================================
